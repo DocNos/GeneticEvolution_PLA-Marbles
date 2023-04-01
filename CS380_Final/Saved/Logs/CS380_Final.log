@@ -1200,3 +1200,590 @@ LogConfig: CVar [[QualityLevelMapping:high]] deferred - dummy variable created
 [2023.04.01-01.23.31:219][251]LogUObjectHash: Compacting FUObjectHashTables data took   0.96ms
 [2023.04.01-01.23.31:299][252]LogPlayLevel: Display: Destroying online subsystem :Context_2
 [2023.04.01-01.23.32:759][351]LogRendererCore: Warning: Query 'Unaccounted' not ready.
+[2023.04.01-01.24.09:306][591]LogShaderCompilers: Display: ================================================
+[2023.04.01-01.24.09:306][591]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2023.04.01-01.24.09:306][591]LogShaderCompilers: Display: Total job queries 8516, among them cache hits 2 (0.02%)
+[2023.04.01-01.24.09:306][591]LogShaderCompilers: Display: Tracking 2889 distinct input hashes that result in 1447 distinct outputs (50.09%)
+[2023.04.01-01.24.09:306][591]LogShaderCompilers: Display: RAM used: 4.38 MB (0.00 GB) of 2457.60 MB (2.40 GB) budget. Usage: 0.18%
+[2023.04.01-01.24.09:306][591]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2023.04.01-01.24.09:306][591]LogShaderCompilers: Display: Shaders Compiled: 8514
+[2023.04.01-01.24.09:306][591]LogShaderCompilers: Display: Jobs assigned 2969, completed 2889 (97.31%)
+[2023.04.01-01.24.09:306][591]LogShaderCompilers: Display: Average time worker was idle: 0.04 s
+[2023.04.01-01.24.09:306][591]LogShaderCompilers: Display: Time job spent in pending queue: average 93.29 s, longest 208.43 s
+[2023.04.01-01.24.09:306][591]LogShaderCompilers: Display: Job execution time: average 10.56 s, max 50.01 s
+[2023.04.01-01.24.09:306][591]LogShaderCompilers: Display: Job life time (pending + execution): average 101.15 s, max 208.61
+[2023.04.01-01.24.09:306][591]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 396.53 s
+[2023.04.01-01.24.09:306][591]LogShaderCompilers: Display: Jobs were issued in 368 batches (only local compilation was used), average 8.07 jobs/batch
+[2023.04.01-01.24.09:306][591]LogShaderCompilers: Display: Average processing rate: 7.29 jobs/sec
+[2023.04.01-01.24.09:306][591]LogShaderCompilers: Display: Effective parallelization: 7.86 (times faster than compiling all shaders on one thread). Compare with number of workers: 8
+[2023.04.01-01.24.09:306][591]LogShaderCompilers: Display: Top 5 most expensive shader types by average time:
+[2023.04.01-01.24.09:306][591]LogShaderCompilers: Display:                           FRenderVolumetricCloudRenderViewCS (compiled   17 times, average 14.55 sec, max 25.58 sec, min 6.07 sec)
+[2023.04.01-01.24.09:306][591]LogShaderCompilers: Display:                                   FCloudRenderViewPS111false (compiled    1 times, average 11.88 sec, max 11.88 sec, min 11.88 sec)
+[2023.04.01-01.24.09:306][591]LogShaderCompilers: Display:                                   FCloudRenderViewPS011false (compiled    1 times, average 11.43 sec, max 11.43 sec, min 11.43 sec)
+[2023.04.01-01.24.09:306][591]LogShaderCompilers: Display:                                   FCloudRenderViewPS101false (compiled    1 times, average 10.34 sec, max 10.34 sec, min 10.34 sec)
+[2023.04.01-01.24.09:306][591]LogShaderCompilers: Display:                                   FCloudRenderViewPS001false (compiled    1 times, average 9.36 sec, max 9.36 sec, min 9.36 sec)
+[2023.04.01-01.24.09:306][591]LogShaderCompilers: Display: Top 5 shader types by total compile time:
+[2023.04.01-01.24.09:306][591]LogShaderCompilers: Display:                                               FHWRasterizeVS - 9.51% of total time (compiled  288 times, average 1.03 sec, max 1.38 sec, min 0.82 sec)
+[2023.04.01-01.24.09:306][591]LogShaderCompilers: Display:                           FRenderVolumetricCloudRenderViewCS - 7.93% of total time (compiled   17 times, average 14.55 sec, max 25.58 sec, min 6.07 sec)
+[2023.04.01-01.24.09:306][591]LogShaderCompilers: Display:                                             FDebugViewModePS - 4.27% of total time (compiled  117 times, average 1.14 sec, max 2.37 sec, min 0.60 sec)
+[2023.04.01-01.24.09:306][591]LogShaderCompilers: Display:                                 TBasePassVSFNoLightMapPolicy - 4.02% of total time (compiled  112 times, average 1.12 sec, max 2.34 sec, min 0.40 sec)
+[2023.04.01-01.24.09:306][591]LogShaderCompilers: Display:                                 TBasePassPSFNoLightMapPolicy - 3.87% of total time (compiled  117 times, average 1.03 sec, max 2.51 sec, min 0.59 sec)
+[2023.04.01-01.24.09:306][591]LogShaderCompilers: Display: ================================================
+[2023.04.01-01.25.41:825][384]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/VehicleTemplate/Blueprints/SportsCar/SportsCar_Pawn.SportsCar_Pawn
+[2023.04.01-01.25.41:826][384]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2023.04.01-01.25.43:463][384]LogMaterial: Display: Missing cached shadermap for GridMaterial in PCD3D_SM5, Default, SM5 (DDC key hash: 027769BC7ADC98B38F3788732B2F323282E36137), compiling. 
+[2023.04.01-01.25.43:507][384]LogMaterial: Display: Missing cached shadermap for PersonaFloorMat in PCD3D_SM5, Default, SM5 (DDC key hash: 7077E4A84B5003C989DEF52BA9D2B8EDBFAADE0A), compiling. 
+[2023.04.01-01.25.44:690][384]LogSlate: Took 0.000387 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2023.04.01-01.25.46:800][453]LogSlate: Took 0.000254 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2023.04.01-01.25.47:028][469]LogSlate: Window 'SportsCar_Pawn' being destroyed
+[2023.04.01-01.27.09:706][707]LogShaderCompilers: Display: ================================================
+[2023.04.01-01.27.09:706][707]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2023.04.01-01.27.09:706][707]LogShaderCompilers: Display: Total job queries 8557, among them cache hits 2 (0.02%)
+[2023.04.01-01.27.09:706][707]LogShaderCompilers: Display: Tracking 4539 distinct input hashes that result in 1890 distinct outputs (41.64%)
+[2023.04.01-01.27.09:706][707]LogShaderCompilers: Display: RAM used: 5.68 MB (0.01 GB) of 2457.60 MB (2.40 GB) budget. Usage: 0.23%
+[2023.04.01-01.27.09:706][707]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2023.04.01-01.27.09:706][707]LogShaderCompilers: Display: Shaders Compiled: 8555
+[2023.04.01-01.27.09:706][707]LogShaderCompilers: Display: Jobs assigned 4619, completed 4539 (98.27%)
+[2023.04.01-01.27.09:706][707]LogShaderCompilers: Display: Average time worker was idle: 0.03 s
+[2023.04.01-01.27.09:706][707]LogShaderCompilers: Display: Time job spent in pending queue: average 160.80 s, longest 388.36 s
+[2023.04.01-01.27.09:706][707]LogShaderCompilers: Display: Job execution time: average 9.90 s, max 50.01 s
+[2023.04.01-01.27.09:706][707]LogShaderCompilers: Display: Job life time (pending + execution): average 166.96 s, max 388.36
+[2023.04.01-01.27.09:706][707]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 576.93 s
+[2023.04.01-01.27.09:706][707]LogShaderCompilers: Display: Jobs were issued in 533 batches (only local compilation was used), average 8.67 jobs/batch
+[2023.04.01-01.27.09:706][707]LogShaderCompilers: Display: Average processing rate: 7.87 jobs/sec
+[2023.04.01-01.27.09:706][707]LogShaderCompilers: Display: Effective parallelization: 7.64 (times faster than compiling all shaders on one thread). Compare with number of workers: 8
+[2023.04.01-01.27.09:706][707]LogShaderCompilers: Display: Top 5 most expensive shader types by average time:
+[2023.04.01-01.27.09:706][707]LogShaderCompilers: Display:                           FRenderVolumetricCloudRenderViewCS (compiled   17 times, average 14.55 sec, max 25.58 sec, min 6.07 sec)
+[2023.04.01-01.27.09:706][707]LogShaderCompilers: Display:                                   FCloudRenderViewPS111false (compiled    1 times, average 11.88 sec, max 11.88 sec, min 11.88 sec)
+[2023.04.01-01.27.09:706][707]LogShaderCompilers: Display:                                   FCloudRenderViewPS011false (compiled    1 times, average 11.43 sec, max 11.43 sec, min 11.43 sec)
+[2023.04.01-01.27.09:706][707]LogShaderCompilers: Display:                                   FCloudRenderViewPS101false (compiled    1 times, average 10.34 sec, max 10.34 sec, min 10.34 sec)
+[2023.04.01-01.27.09:706][707]LogShaderCompilers: Display:                                   FCloudRenderViewPS001false (compiled    1 times, average 9.36 sec, max 9.36 sec, min 9.36 sec)
+[2023.04.01-01.27.09:706][707]LogShaderCompilers: Display: Top 5 shader types by total compile time:
+[2023.04.01-01.27.09:706][707]LogShaderCompilers: Display:                                               FHWRasterizeVS - 6.73% of total time (compiled  288 times, average 1.03 sec, max 1.38 sec, min 0.82 sec)
+[2023.04.01-01.27.09:706][707]LogShaderCompilers: Display:                           FRenderVolumetricCloudRenderViewCS - 5.61% of total time (compiled   17 times, average 14.55 sec, max 25.58 sec, min 6.07 sec)
+[2023.04.01-01.27.09:706][707]LogShaderCompilers: Display:                                 TBasePassVSFNoLightMapPolicy - 4.93% of total time (compiled  201 times, average 1.08 sec, max 3.16 sec, min 0.33 sec)
+[2023.04.01-01.27.09:706][707]LogShaderCompilers: Display:                                 TBasePassPSFNoLightMapPolicy - 4.79% of total time (compiled  209 times, average 1.01 sec, max 10.24 sec, min 0.53 sec)
+[2023.04.01-01.27.09:706][707]LogShaderCompilers: Display:                                                 FLumenCardVS - 4.79% of total time (compiled  199 times, average 1.06 sec, max 7.26 sec, min 0.28 sec)
+[2023.04.01-01.27.09:706][707]LogShaderCompilers: Display: ================================================
+[2023.04.01-01.30.10:730][ 19]LogShaderCompilers: Display: ================================================
+[2023.04.01-01.30.10:730][ 19]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2023.04.01-01.30.10:730][ 19]LogShaderCompilers: Display: Total job queries 8557, among them cache hits 2 (0.02%)
+[2023.04.01-01.30.10:730][ 19]LogShaderCompilers: Display: Tracking 5959 distinct input hashes that result in 2121 distinct outputs (35.59%)
+[2023.04.01-01.30.10:730][ 19]LogShaderCompilers: Display: RAM used: 6.43 MB (0.01 GB) of 2457.60 MB (2.40 GB) budget. Usage: 0.26%
+[2023.04.01-01.30.10:731][ 19]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2023.04.01-01.30.10:731][ 19]LogShaderCompilers: Display: Shaders Compiled: 8555
+[2023.04.01-01.30.10:731][ 19]LogShaderCompilers: Display: Jobs assigned 6039, completed 5959 (98.68%)
+[2023.04.01-01.30.10:731][ 19]LogShaderCompilers: Display: Average time worker was idle: 0.02 s
+[2023.04.01-01.30.10:731][ 19]LogShaderCompilers: Display: Time job spent in pending queue: average 233.07 s, longest 568.38 s
+[2023.04.01-01.30.10:731][ 19]LogShaderCompilers: Display: Job execution time: average 9.95 s, max 50.01 s
+[2023.04.01-01.30.10:731][ 19]LogShaderCompilers: Display: Job life time (pending + execution): average 238.71 s, max 568.41
+[2023.04.01-01.30.10:731][ 19]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 757.93 s
+[2023.04.01-01.30.10:731][ 19]LogShaderCompilers: Display: Jobs were issued in 675 batches (only local compilation was used), average 8.95 jobs/batch
+[2023.04.01-01.30.10:731][ 19]LogShaderCompilers: Display: Average processing rate: 7.86 jobs/sec
+[2023.04.01-01.30.10:731][ 19]LogShaderCompilers: Display: Effective parallelization: 7.54 (times faster than compiling all shaders on one thread). Compare with number of workers: 8
+[2023.04.01-01.30.10:731][ 19]LogShaderCompilers: Display: Top 5 most expensive shader types by average time:
+[2023.04.01-01.30.10:731][ 19]LogShaderCompilers: Display:                           FRenderVolumetricCloudRenderViewCS (compiled   17 times, average 14.55 sec, max 25.58 sec, min 6.07 sec)
+[2023.04.01-01.30.10:731][ 19]LogShaderCompilers: Display:                                   FCloudRenderViewPS111false (compiled    1 times, average 11.88 sec, max 11.88 sec, min 11.88 sec)
+[2023.04.01-01.30.10:731][ 19]LogShaderCompilers: Display:                                   FCloudRenderViewPS011false (compiled    1 times, average 11.43 sec, max 11.43 sec, min 11.43 sec)
+[2023.04.01-01.30.10:731][ 19]LogShaderCompilers: Display:                                   FCloudRenderViewPS101false (compiled    1 times, average 10.34 sec, max 10.34 sec, min 10.34 sec)
+[2023.04.01-01.30.10:731][ 19]LogShaderCompilers: Display:                                   FCloudRenderViewPS001false (compiled    1 times, average 9.36 sec, max 9.36 sec, min 9.36 sec)
+[2023.04.01-01.30.10:731][ 19]LogShaderCompilers: Display: Top 5 shader types by total compile time:
+[2023.04.01-01.30.10:731][ 19]LogShaderCompilers: Display:                                               FHWRasterizeVS - 5.19% of total time (compiled  288 times, average 1.03 sec, max 1.38 sec, min 0.82 sec)
+[2023.04.01-01.30.10:731][ 19]LogShaderCompilers: Display:                                             FDebugViewModeVS - 4.68% of total time (compiled  246 times, average 1.09 sec, max 2.37 sec, min 0.34 sec)
+[2023.04.01-01.30.10:731][ 19]LogShaderCompilers: Display:                                 TBasePassVSFNoLightMapPolicy - 4.65% of total time (compiled  244 times, average 1.09 sec, max 3.16 sec, min 0.33 sec)
+[2023.04.01-01.30.10:731][ 19]LogShaderCompilers: Display:                                                 FLumenCardVS - 4.44% of total time (compiled  239 times, average 1.06 sec, max 7.26 sec, min 0.28 sec)
+[2023.04.01-01.30.10:731][ 19]LogShaderCompilers: Display:                                 TBasePassPSFNoLightMapPolicy - 4.42% of total time (compiled  251 times, average 1.01 sec, max 10.24 sec, min 0.53 sec)
+[2023.04.01-01.30.10:731][ 19]LogShaderCompilers: Display: ================================================
+[2023.04.01-01.32.30:777][502]LogContentBrowser: Deferred new asset folder creation: NewFolder
+[2023.04.01-01.32.30:807][502]LogContentBrowser: Creating deferred item: NewFolder
+[2023.04.01-01.32.30:833][503]LogContentBrowser: Renaming the item being created (Deferred Item: NewFolder).
+[2023.04.01-01.32.32:134][597]LogContentBrowser: Attempting asset rename: NewFolder -> NewFolder
+[2023.04.01-01.32.32:135][597]LogContentBrowser: End creating deferred item NewFolder
+[2023.04.01-01.32.57:625][998]LogContentBrowser: Deferred new asset folder creation: NewFolder
+[2023.04.01-01.32.57:663][998]LogContentBrowser: Creating deferred item: NewFolder
+[2023.04.01-01.32.57:685][999]LogContentBrowser: Renaming the item being created (Deferred Item: NewFolder).
+[2023.04.01-01.33.11:815][935]LogShaderCompilers: Display: ================================================
+[2023.04.01-01.33.11:815][935]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2023.04.01-01.33.11:815][935]LogShaderCompilers: Display: Total job queries 8557, among them cache hits 2 (0.02%)
+[2023.04.01-01.33.11:815][935]LogShaderCompilers: Display: Tracking 7669 distinct input hashes that result in 2322 distinct outputs (30.28%)
+[2023.04.01-01.33.11:815][935]LogShaderCompilers: Display: RAM used: 6.93 MB (0.01 GB) of 2457.60 MB (2.40 GB) budget. Usage: 0.28%
+[2023.04.01-01.33.11:815][935]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2023.04.01-01.33.11:815][935]LogShaderCompilers: Display: Shaders Compiled: 8555
+[2023.04.01-01.33.11:815][935]LogShaderCompilers: Display: Jobs assigned 7749, completed 7669 (98.97%)
+[2023.04.01-01.33.11:815][935]LogShaderCompilers: Display: Average time worker was idle: 0.02 s
+[2023.04.01-01.33.11:815][935]LogShaderCompilers: Display: Time job spent in pending queue: average 325.41 s, longest 748.43 s
+[2023.04.01-01.33.11:815][935]LogShaderCompilers: Display: Job execution time: average 9.64 s, max 50.01 s
+[2023.04.01-01.33.11:815][935]LogShaderCompilers: Display: Job life time (pending + execution): average 330.73 s, max 748.43
+[2023.04.01-01.33.11:815][935]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 939.02 s
+[2023.04.01-01.33.11:815][935]LogShaderCompilers: Display: Jobs were issued in 846 batches (only local compilation was used), average 9.16 jobs/batch
+[2023.04.01-01.33.11:815][935]LogShaderCompilers: Display: Average processing rate: 8.17 jobs/sec
+[2023.04.01-01.33.11:815][935]LogShaderCompilers: Display: Effective parallelization: 7.46 (times faster than compiling all shaders on one thread). Compare with number of workers: 8
+[2023.04.01-01.33.11:815][935]LogShaderCompilers: Display: Top 5 most expensive shader types by average time:
+[2023.04.01-01.33.11:815][935]LogShaderCompilers: Display:                           FRenderVolumetricCloudRenderViewCS (compiled   17 times, average 14.55 sec, max 25.58 sec, min 6.07 sec)
+[2023.04.01-01.33.11:815][935]LogShaderCompilers: Display:                                   FCloudRenderViewPS111false (compiled    1 times, average 11.88 sec, max 11.88 sec, min 11.88 sec)
+[2023.04.01-01.33.11:815][935]LogShaderCompilers: Display:                                   FCloudRenderViewPS011false (compiled    1 times, average 11.43 sec, max 11.43 sec, min 11.43 sec)
+[2023.04.01-01.33.11:815][935]LogShaderCompilers: Display:                                   FCloudRenderViewPS101false (compiled    1 times, average 10.34 sec, max 10.34 sec, min 10.34 sec)
+[2023.04.01-01.33.11:815][935]LogShaderCompilers: Display:                                   FCloudRenderViewPS001false (compiled    1 times, average 9.36 sec, max 9.36 sec, min 9.36 sec)
+[2023.04.01-01.33.11:815][935]LogShaderCompilers: Display: Top 5 shader types by total compile time:
+[2023.04.01-01.33.11:815][935]LogShaderCompilers: Display:                                             FDebugViewModeVS - 4.89% of total time (compiled  321 times, average 1.07 sec, max 2.37 sec, min 0.34 sec)
+[2023.04.01-01.33.11:815][935]LogShaderCompilers: Display:                                 TBasePassVSFNoLightMapPolicy - 4.78% of total time (compiled  313 times, average 1.07 sec, max 3.16 sec, min 0.33 sec)
+[2023.04.01-01.33.11:815][935]LogShaderCompilers: Display:                                                 FLumenCardVS - 4.67% of total time (compiled  317 times, average 1.03 sec, max 7.26 sec, min 0.28 sec)
+[2023.04.01-01.33.11:815][935]LogShaderCompilers: Display:                                 TBasePassPSFNoLightMapPolicy - 4.58% of total time (compiled  328 times, average 0.98 sec, max 10.24 sec, min 0.53 sec)
+[2023.04.01-01.33.11:815][935]LogShaderCompilers: Display:                                             FDebugViewModePS - 4.41% of total time (compiled  327 times, average 0.94 sec, max 2.37 sec, min 0.56 sec)
+[2023.04.01-01.33.11:816][935]LogShaderCompilers: Display: ================================================
+[2023.04.01-01.33.12:601][991]LogContentBrowser: Attempting asset rename: NewFolder -> CustomBP
+[2023.04.01-01.33.12:602][991]LogContentBrowser: End creating deferred item NewFolder
+[2023.04.01-01.33.29:147][ 84]LogContentBrowser: Attempting asset rename: CustomBP -> BP_Custom
+[2023.04.01-01.33.32:733][289]LogEditorClassViewer: Warning: Class /Engine/Tutorial/InWorldBlueprintEditing/TutorialAssets/IWBE_Blutility.IWBE_Blutility_C has parent /Script/Blutility.PlacedEditorUtilityBase, but this parent is not found. The Class will not be shown in ClassViewer.
+[2023.04.01-01.33.40:499][289]LogSlate: Window 'Pick Parent Class' being destroyed
+[2023.04.01-01.33.40:547][289]LogContentBrowser: Deferred new asset file creation: NewBlueprint
+[2023.04.01-01.33.40:583][289]LogContentBrowser: Creating deferred item: NewBlueprint
+[2023.04.01-01.33.40:645][291]LogContentBrowser: Renaming the item being created (Deferred Item: NewBlueprint).
+[2023.04.01-01.33.52:434][ 97]LogContentBrowser: Attempting asset rename: NewBlueprint -> BP_Serializer
+[2023.04.01-01.33.52:442][ 97]LogContentBrowser: End creating deferred item NewBlueprint
+[2023.04.01-01.33.53:970][191]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/BP_Custom/BP_Serializer.BP_Serializer
+[2023.04.01-01.33.53:970][191]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2023.04.01-01.33.54:621][191]LogViewport: Scene viewport resized to 1939x937, mode Windowed.
+[2023.04.01-01.35.13:039][ 34]LogEditor: Attempting to add actor of class 'CineCameraActor' to level at -3650.00,1210.00,0.00
+[2023.04.01-01.35.13:117][ 35]LogViewport: Scene viewport resized to 854x480, mode Windowed.
+[2023.04.01-01.35.55:914][711]Cmd: SELECT NONE
+[2023.04.01-01.35.58:320][881]LogViewport: Scene viewport resized to 854x480, mode Windowed.
+[2023.04.01-01.36.15:853][963]Cmd: SELECT NONE
+[2023.04.01-01.36.40:852][  0]LogSlate: Took 0.000193 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2023.04.01-01.36.41:305][ 19]LogAssetEditorSubsystem: Opening Asset editor for LevelScriptBlueprint /Game/VehicleTemplate/Maps/VehicleExampleMap.VehicleExampleMap:PersistentLevel.VehicleExampleMap
+[2023.04.01-01.36.41:305][ 19]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2023.04.01-01.36.57:333][482]Cmd: DELETE
+[2023.04.01-01.36.57:333][482]Cmd: ACTOR DELETE
+[2023.04.01-01.36.57:335][482]LogEditorActor: Deleted Actor: PlayerStart
+[2023.04.01-01.36.57:379][482]LogUObjectHash: Compacting FUObjectHashTables data took   1.20ms
+[2023.04.01-01.36.57:387][482]LogEditorActor: Deleted 1 Actors (0.054 secs)
+[2023.04.01-01.36.58:651][588]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2023.04.01-01.36.58:657][588]LogWorldPartition: Display: GenerateStreaming started...
+[2023.04.01-01.36.58:657][588]LogWorldPartition: Display: GetPartitionedActors started...
+[2023.04.01-01.36.58:657][588]LogWorldPartition: Warning: Invalid world bounds, grid partitioning will use a runtime grid with 1 cell.
+[2023.04.01-01.36.58:657][588]LogWorldPartition: Display: ValidateSingleActorReferer started...
+[2023.04.01-01.36.58:657][588]LogWorldPartition: Display: ValidateSingleActorReferer took 0 us
+[2023.04.01-01.36.58:657][588]LogWorldPartition: Display: GetPartitionedActors took 55 us
+[2023.04.01-01.36.58:657][588]LogWorldPartition: Display: GenerateStreaming took 280 us
+[2023.04.01-01.36.58:657][588]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2023.04.01-01.36.58:657][588]PIE: New page: PIE session: VehicleExampleMap (Mar 31, 2023, 11:36:58 AM)
+[2023.04.01-01.36.58:657][588]LogPlayLevel: Creating play world package: /Game/VehicleTemplate/Maps/UEDPIE_0_VehicleExampleMap
+[2023.04.01-01.36.58:789][588]LogWorldPartition: Initial Data Layer Effective States Activated() Loaded()
+[2023.04.01-01.36.58:789][588]LogPlayLevel: PIE: StaticDuplicateObject took: (0.132075s)
+[2023.04.01-01.36.58:789][588]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleTemplate/Maps/VehicleExampleMap.VehicleExampleMap to /Game/VehicleTemplate/Maps/UEDPIE_0_VehicleExampleMap.VehicleExampleMap (0.132126s)
+[2023.04.01-01.36.58:789][588]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2023.04.01-01.36.58:789][588]LogAIModule: Creating AISystem for world VehicleExampleMap
+[2023.04.01-01.36.58:790][588]LogWorldPartition: Display: WorldPartition initialize started...
+[2023.04.01-01.36.58:790][588]LogWorldPartition: UWorldPartition::Initialize(IsEditor=0, IsGame=0, IsCooking=0)
+[2023.04.01-01.36.58:810][588]LogWorldPartition: Display: WorldPartition initialize took 20 ms
+[2023.04.01-01.36.58:810][588]LogPlayLevel: PIE: World Init took: (0.021153s)
+[2023.04.01-01.36.58:843][588]LogUObjectHash: Compacting FUObjectHashTables data took   1.11ms
+[2023.04.01-01.36.58:844][588]LogAudio: Display: Creating Audio Device:                 Id: 3, Scope: Unique, Realtime: True
+[2023.04.01-01.36.58:844][588]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2023.04.01-01.36.58:845][588]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2023.04.01-01.36.58:845][588]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2023.04.01-01.36.58:845][588]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2023.04.01-01.36.58:845][588]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2023.04.01-01.36.58:845][588]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2023.04.01-01.36.58:845][588]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2023.04.01-01.36.58:845][588]LogAudio: Display: AudioDevice MaxSources: 32
+[2023.04.01-01.36.58:845][588]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2023.04.01-01.36.58:845][588]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2023.04.01-01.36.58:845][588]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2023.04.01-01.36.58:847][588]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2023.04.01-01.36.58:867][588]LogAudioMixer: Display: Using Audio Hardware Device Headset_ (High Definition Audio Device)
+[2023.04.01-01.36.58:867][588]LogAudioMixer: Display: Initializing Sound Submixes...
+[2023.04.01-01.36.58:867][588]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2023.04.01-01.36.58:867][588]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2023.04.01-01.36.58:868][588]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=3
+[2023.04.01-01.36.58:868][588]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=3
+[2023.04.01-01.36.58:869][588]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=3
+[2023.04.01-01.36.58:869][588]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=3
+[2023.04.01-01.36.58:869][588]LogInit: FAudioDevice initialized.
+[2023.04.01-01.36.58:869][588]LogAudio: Display: Audio Device (ID: 3) registered with world 'VehicleExampleMap'.
+[2023.04.01-01.36.58:879][588]LogLoad: Game class is 'VehicleAdvGameMode_C'
+[2023.04.01-01.36.58:884][588]LogWorld: Bringing World /Game/VehicleTemplate/Maps/UEDPIE_0_VehicleExampleMap.VehicleExampleMap up for play (max tick rate 0) at 2023.03.31-18.36.58
+[2023.04.01-01.36.58:884][588]LogWorld: Bringing up level for play took: 0.005038
+[2023.04.01-01.36.58:886][588]LogOnline: OSS: Created online subsystem instance for: :Context_9
+[2023.04.01-01.36.58:887][588]LogSpawn: Warning: SpawnActor failed because no class was specified
+[2023.04.01-01.36.58:888][588]LogWorldPartition: New Streaming Source: VehiclePlayerController_C_0 -> Position: X=-3492.287 Y=-9582.233 Z=120.480
+[2023.04.01-01.36.58:888][588]LogWorldPartition: Warning: Invalid world bounds, grid partitioning will use a runtime grid with 1 cell.
+[2023.04.01-01.36.58:888][588]Cmd: r.motionblur.amount 0
+[2023.04.01-01.36.58:888][588]r.MotionBlur.Amount = "0"
+[2023.04.01-01.36.58:889][588]PIE: Server logged in
+[2023.04.01-01.36.58:890][588]PIE: Play in editor total start time 0.234 seconds.
+[2023.04.01-01.37.02:240][835]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2023.04.01-01.37.02:240][835]LogWorld: BeginTearingDown for /Game/VehicleTemplate/Maps/UEDPIE_0_VehicleExampleMap
+[2023.04.01-01.37.02:240][835]LogWorld: UWorld::CleanupWorld for VehicleExampleMap, bSessionEnded=true, bCleanupResources=true
+[2023.04.01-01.37.02:241][835]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.04.01-01.37.02:255][835]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2023.04.01-01.37.02:260][835]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.04.01-01.37.02:294][835]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2023.04.01-01.37.02:295][835]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=3
+[2023.04.01-01.37.02:296][835]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=3
+[2023.04.01-01.37.02:303][835]LogUObjectHash: Compacting FUObjectHashTables data took   1.16ms
+[2023.04.01-01.37.02:340][836]LogPlayLevel: Display: Destroying online subsystem :Context_9
+[2023.04.01-01.37.10:837][553]Cmd: DELETE
+[2023.04.01-01.37.10:837][553]Cmd: ACTOR DELETE
+[2023.04.01-01.37.10:839][553]LogEditorActor: Deleted Actor: StaticMeshActor
+[2023.04.01-01.37.10:839][553]LogEditorActor: Deleted Actor: StaticMeshActor
+[2023.04.01-01.37.10:840][553]LogEditorActor: Deleted Actor: StaticMeshActor
+[2023.04.01-01.37.10:840][553]LogEditorActor: Deleted Actor: StaticMeshActor
+[2023.04.01-01.37.10:840][553]LogEditorActor: Deleted Actor: StaticMeshActor
+[2023.04.01-01.37.10:841][553]LogEditorActor: Deleted Actor: StaticMeshActor
+[2023.04.01-01.37.10:876][553]LogUObjectHash: Compacting FUObjectHashTables data took   0.50ms
+[2023.04.01-01.37.10:879][553]LogEditorActor: Deleted 6 Actors (0.042 secs)
+[2023.04.01-01.37.11:869][638]Cmd: DELETE
+[2023.04.01-01.37.11:869][638]Cmd: ACTOR DELETE
+[2023.04.01-01.37.15:703][956]Cmd: DELETE
+[2023.04.01-01.37.15:703][956]Cmd: ACTOR DELETE
+[2023.04.01-01.37.15:705][956]LogEditorActor: Deleted Actor: StaticMeshActor
+[2023.04.01-01.37.15:705][956]LogEditorActor: Deleted Actor: StaticMeshActor
+[2023.04.01-01.37.15:706][956]LogEditorActor: Deleted Actor: StaticMeshActor
+[2023.04.01-01.37.15:747][956]LogUObjectHash: Compacting FUObjectHashTables data took   0.50ms
+[2023.04.01-01.37.15:750][956]LogEditorActor: Deleted 3 Actors (0.047 secs)
+[2023.04.01-01.37.16:595][ 31]Cmd: DELETE
+[2023.04.01-01.37.16:596][ 31]Cmd: ACTOR DELETE
+[2023.04.01-01.37.18:043][157]Cmd: DELETE
+[2023.04.01-01.37.18:043][157]Cmd: ACTOR DELETE
+[2023.04.01-01.37.29:341][106]Cmd: DELETE
+[2023.04.01-01.37.29:341][106]Cmd: ACTOR DELETE
+[2023.04.01-01.37.29:342][106]LogEditorActor: Deleted Actor: PostProcessVolume
+[2023.04.01-01.37.29:380][106]LogUObjectHash: Compacting FUObjectHashTables data took   0.55ms
+[2023.04.01-01.37.29:383][106]LogEditorActor: Deleted 1 Actors (0.042 secs)
+[2023.04.01-01.37.30:222][173]Cmd: DELETE
+[2023.04.01-01.37.30:222][173]Cmd: ACTOR DELETE
+[2023.04.01-01.37.30:224][173]LogEditorActor: Deleted Actor: ExponentialHeightFog
+[2023.04.01-01.37.30:260][173]LogUObjectHash: Compacting FUObjectHashTables data took   0.51ms
+[2023.04.01-01.37.30:263][173]LogEditorActor: Deleted 1 Actors (0.041 secs)
+[2023.04.01-01.37.33:108][420]Cmd: DELETE
+[2023.04.01-01.37.33:109][420]Cmd: ACTOR DELETE
+[2023.04.01-01.37.33:110][420]LogEditorActor: Deleted Actor: DirectionalLight
+[2023.04.01-01.37.33:146][420]LogUObjectHash: Compacting FUObjectHashTables data took   0.53ms
+[2023.04.01-01.37.33:148][420]LogEditorActor: Deleted 1 Actors (0.040 secs)
+[2023.04.01-01.37.34:737][579]Cmd: TRANSACTION UNDO
+[2023.04.01-01.37.34:737][579]LogEditorTransaction: Undo Delete Elements
+[2023.04.01-01.37.36:370][688]Cmd: DELETE
+[2023.04.01-01.37.36:370][688]Cmd: ACTOR DELETE
+[2023.04.01-01.37.36:372][688]LogEditorActor: Deleted Actor: SkyAtmosphere
+[2023.04.01-01.37.36:407][688]LogUObjectHash: Compacting FUObjectHashTables data took   0.66ms
+[2023.04.01-01.37.36:410][688]LogEditorActor: Deleted 1 Actors (0.040 secs)
+[2023.04.01-01.37.38:586][870]Cmd: DELETE
+[2023.04.01-01.37.38:586][870]Cmd: ACTOR DELETE
+[2023.04.01-01.37.38:587][870]LogEditorActor: Deleted Actor: StaticMeshActor
+[2023.04.01-01.37.38:623][870]LogUObjectHash: Compacting FUObjectHashTables data took   0.49ms
+[2023.04.01-01.37.38:626][870]LogEditorActor: Deleted 1 Actors (0.039 secs)
+[2023.04.01-01.37.39:971][990]Cmd: DELETE
+[2023.04.01-01.37.39:971][990]Cmd: ACTOR DELETE
+[2023.04.01-01.37.39:973][990]LogEditorActor: Deleted Actor: SkyLight
+[2023.04.01-01.37.40:012][990]LogUObjectHash: Compacting FUObjectHashTables data took   0.49ms
+[2023.04.01-01.37.40:014][990]LogEditorActor: Deleted 1 Actors (0.042 secs)
+[2023.04.01-01.37.41:445][116]Cmd: DELETE
+[2023.04.01-01.37.41:445][116]Cmd: ACTOR DELETE
+[2023.04.01-01.37.41:446][116]LogEditorActor: Deleted Actor: VolumetricCloud
+[2023.04.01-01.37.41:483][116]LogUObjectHash: Compacting FUObjectHashTables data took   0.50ms
+[2023.04.01-01.37.41:485][116]LogEditorActor: Deleted 1 Actors (0.040 secs)
+[2023.04.01-01.37.51:123][ 16]Cmd: DELETE
+[2023.04.01-01.37.51:124][ 16]Cmd: ACTOR DELETE
+[2023.04.01-01.37.51:124][ 16]LogEditorActor: Cannot delete actor Landscape /Game/VehicleTemplate/Maps/VehicleExampleMap.VehicleExampleMap:PersistentLevel.Landscape_0: Landscape can't be deleted because it still has 4 LandscapeStreamingProxies and 1 LandscapeSplineActors
+[2023.04.01-01.37.51:160][ 16]LogUObjectHash: Compacting FUObjectHashTables data took   0.49ms
+[2023.04.01-01.37.51:163][ 16]LogEditorActor: Deleted 0 Actors (0.039 secs)
+[2023.04.01-01.37.57:980][628]Cmd: SELECT NONE
+[2023.04.01-01.38.03:926][166]Cmd: DELETE
+[2023.04.01-01.38.03:926][166]Cmd: ACTOR DELETE
+[2023.04.01-01.38.03:927][166]LogEditorActor: Deleted Actor: DirectionalLight
+[2023.04.01-01.38.03:962][166]LogUObjectHash: Compacting FUObjectHashTables data took   0.48ms
+[2023.04.01-01.38.03:966][166]LogEditorActor: Deleted 1 Actors (0.040 secs)
+[2023.04.01-01.38.05:058][276]Cmd: TRANSACTION UNDO
+[2023.04.01-01.38.05:058][276]LogEditorTransaction: Undo Delete Elements
+[2023.04.01-01.38.08:170][504]LogViewport: Scene viewport resized to 854x480, mode Windowed.
+[2023.04.01-01.38.32:037][712]LogSlate: Took 0.004277 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensedItalic.ttf' (160K)
+[2023.04.01-01.39.34:349][170]LogSlate: Vector cache flush requested. Reason: Large atlases out of space; 2/1 Textures; frames since last flush: 75169
+[2023.04.01-01.39.34:349][170]LogSlate: Warning: Setting the threshold to trigger a flush to 2 non-atlased textures as there is a lot of font data being cached.
+[2023.04.01-01.39.43:068][196]LogUObjectHash: Compacting FUObjectHashTables data took   1.42ms
+[2023.04.01-01.39.43:080][196]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/VehicleTemplate/Maps/VehicleExampleMap_Auto1
+[2023.04.01-01.39.43:080][196]LogSavePackage: Moving '../../../../../CS380_AlternativeInquisitions/CS380_Final/Saved/VehicleExampleMap_Auto13B0CD67A4180EA272F86A2842D8DB731.tmp' to '../../../../../CS380_AlternativeInquisitions/CS380_Final/Saved/Autosaves/Game/VehicleTemplate/Maps/VehicleExampleMap_Auto1.umap'
+[2023.04.01-01.39.43:094][196]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/__ExternalActors__/VehicleTemplate/Maps/VehicleExampleMap/1/L7/TYQJNYBDWNKXAVD4IETT3T_Auto1
+[2023.04.01-01.39.43:094][196]LogSavePackage: Moving '../../../../../CS380_AlternativeInquisitions/CS380_Final/Saved/TYQJNYBDWNKXAVD4IETT3T_Auto13C0FB87946394255C18F228E48004877.tmp' to '../../../../../CS380_AlternativeInquisitions/CS380_Final/Saved/Autosaves/Game/__ExternalActors__/VehicleTemplate/Maps/VehicleExampleMap/1/L7/TYQJNYBDWNKXAVD4IETT3T_Auto1.uasset'
+[2023.04.01-01.39.43:094][196]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/VehicleTemplate/Maps/VehicleExampleMap' took 0.075
+[2023.04.01-01.39.43:094][196]LogFileHelpers: Editor autosave (incl. sublevels & external actors) for all levels took 0.075
+[2023.04.01-01.40.14:456][276]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/VehicleTemplate/Blueprints/VehiclePlayerController.VehiclePlayerController
+[2023.04.01-01.40.14:456][276]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2023.04.01-01.40.45:681][431]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/VehicleTemplate/Blueprints/VehicleAdvGameMode.VehicleAdvGameMode
+[2023.04.01-01.40.45:682][431]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2023.04.01-01.41.00:647][ 61]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/VehicleTemplate/Blueprints/OffroadGameMode.OffroadGameMode
+[2023.04.01-01.41.00:650][ 61]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2023.04.01-01.41.28:916][106]LogContentBrowser: Attempting asset rename: NewFolder -> Levels_Custom
+[2023.04.01-01.41.39:116][636]LogSlate: Window 'Message' being destroyed
+[2023.04.01-01.41.39:145][636]Message dialog closed, result: Yes, title: Message, text: The following assets are referenced by one or more Class Default Objects: 
+
+VehicleExampleMap (project settings soft reference)
+
+Continuing with the rename may require changes to fix references in code or project settings. Assets could otherwise be missing in cooked/packaged builds. Do you wish to continue?
+[2023.04.01-01.41.39:165][636]LogMetaData: Removing '/Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap_C' ref from Metadata '/Game/VehicleTemplate/Maps/VehicleExampleMap.PackageMetaData'
+[2023.04.01-01.41.39:165][636]LogMetaData: Removing '/Game/Levels_Custom/VehicleExampleMap.SKEL_VehicleExampleMap_C' ref from Metadata '/Game/VehicleTemplate/Maps/VehicleExampleMap.PackageMetaData'
+[2023.04.01-01.41.39:165][636]LogMetaData: Removing '/Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap_C:ReceiveBeginPlay' ref from Metadata '/Game/VehicleTemplate/Maps/VehicleExampleMap.PackageMetaData'
+[2023.04.01-01.41.39:165][636]LogMetaData: Removing '/Game/Levels_Custom/VehicleExampleMap.SKEL_VehicleExampleMap_C:ReceiveBeginPlay' ref from Metadata '/Game/VehicleTemplate/Maps/VehicleExampleMap.PackageMetaData'
+[2023.04.01-01.41.39:165][636]LogMetaData: Removing '/Game/Levels_Custom/VehicleExampleMap.SKEL_VehicleExampleMap_C:ReceiveTick' ref from Metadata '/Game/VehicleTemplate/Maps/VehicleExampleMap.PackageMetaData'
+[2023.04.01-01.41.39:205][636]Message dialog closed, result: Ok, title: Unable to Check Out From Source Control!, text: The following assets could not be successfully checked out from source control:
+/Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/A/SP/XSBFX0LGZMU52H1EMQNCRK
+/Game/__ExternalObjects__/Levels_Custom/VehicleExampleMap/0/Z6/JUFI4VTUNFQO3RQSGN287J
+/Game/__ExternalObjects__/Levels_Custom/VehicleExampleMap/2/7V/RA22UKM6PP6XQBTINC4UOC
+/Game/__ExternalObjects__/Levels_Custom/VehicleExampleMap/6/UX/CLPZXER3481GUP427G5DVI
+/Game/__ExternalObjects__/Levels_Custom/VehicleExampleMap/5/WV/UVN56WQ3WDCJHJTF89HO9B
+/Game/__ExternalObjects__/Levels_Custom/VehicleExampleMap/0/WN/GLMID2MM4LWQ52Y0WVS0PS
+/Game/__ExternalObjects__/Levels_Custom/VehicleExampleMap/C/1C/08TA2V287GAOZ38330N1S9
+/Game/__ExternalActors__/VehicleTemplate/Maps/VehicleExampleMap/1/0G/S09YAH4R8CMVDMZ7A20STZ
+/Game/__ExternalActors__/VehicleTemplate/Maps/VehicleExampleMap/1/6T/LR1OAKEVJOOPQRQLMJQ8VD
+/Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/1/TZ/KM5Z8LYZZVQHRYLR32PL03
+/Game/__ExternalActors__/VehicleTemplate/Maps/VehicleExampleMap/2/M5/B1Z4KPTFV1L2EREMS5IW1R
+/Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/5/35/LUJJ7X4R3VRS27GD5S7YMH
+/Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/A/ND/0JCR9XTVM9XEXOKR51JRF8
+/Game/__ExternalActors__/VehicleTemplate/Maps/VehicleExampleMap/3/WW/FO9B6T5LMMCOKJG4HCFNL1
+/Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/B/2E/PC4SAYZXB1BH68NMVSRUBE
+/Game/__ExternalActors__/VehicleTemplate/Maps/VehicleExampleMap/4/LP/UZ50PDVAY299IMPNI9D2JC
+/Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/6/P5/Y7BL7L8NEPBDZY69YQ97K6
+/Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/A/3G/C5YHBMHG4ANN4J93JABF1Y
+/Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/9/2R/FWQJBGRCSE3RKBFCD3RYAJ
+/Game/__ExternalActors__/VehicleTemplate/Maps/VehicleExampleMap/7/6B/35BADYNNBJZPEYUTHJKTQU
+/Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/0/D9/NRNBXLRZ1SJITVOAYY6EIW
+/Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/2/FE/GI2R0631RR2PA2PFZ3SESQ
+/Game/__ExternalActors__/VehicleTemplate/Maps/VehicleExampleMap/7/WI/5NFX0QG7YV9FB54TNR4PT1
+/Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/D/MY/5N086NUT4TLR04GH7KK98U
+/Game/__ExternalActors__/VehicleTemplate/Maps/VehicleExampleMap/8/VZ/RO3QWXLUI0FCFWSB7PRWYH
+/Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/A/V4/0A5QW57O9CNLF9E7RLM0DR
+/Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/6/DB/GDJIG157Z6YNQ1F09Q9WYU
+/Game/__ExternalActors__/VehicleTemplate/Maps/VehicleExampleMap/9/NC/X5FY5G6NYCW5E554TE5F5H
+/Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/A/7C/ML7H1Z3GJAFRJ4O1H7NGTF
+/Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/9/P8/5RP29HHH7L1A30IOQZG7NR
+/Game/__ExternalActors__/VehicleTemplate/Maps/VehicleExampleMap/B/S4/39R99VDAXF7X1T8FW5O7G5
+/Game/__ExternalActors__/VehicleTemplate/Maps/VehicleExampleMap/B/UP/HM3YG02LLRWGD06ZK1PRPJ
+/Game/__ExternalActors__/VehicleTemplate/Maps/VehicleExampleMap/B/VA/BP3BNYMRT7OCWW3Q3M2ZTR
+/Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/5/TH/ZN3HMD9WV8P5S0W0B97YXF
+/Game/__ExternalActors__/VehicleTemplate/Maps/VehicleExampleMap/C/3W/RB6196BR3NVWEX5183BKEN
+/Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/1/AC/PV53K807SWCJTLEORV5B15
+/Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/0/XU/8NEXOPTYR6MQ2A5YZFVPKV
+/Game/__ExternalActors__/VehicleTemplate/Maps/VehicleExampleMap/C/UF/QZCJ2TCKW7XORELZJOKKW3
+/Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/3/RO/M13JZH5I1JOYO7AUE9J4T4
+/Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/6/17/BJEE5FY2C48AT7HJG63MXN
+/Game/__ExternalActors__/VehicleTemplate/Maps/VehicleExampleMap/E/Q9/7E8THLUEF2U8O6DZQRWSX9
+/Game/__ExternalActors__/VehicleTemplate/Maps/VehicleExampleMap/E/RG/6FX3FVZLOTLUYLWS5AEE1A
+/Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/0/YJ/W5ARD4QLG7PBDGH9T9BEKG
+[2023.04.01-01.41.39:492][636]LogWorldPartition: Warning: Actor /Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap:PersistentLevel.PlayerStart_1 is unreachable without properly detaching object /Game/__ExternalActors__/VehicleTemplate/Maps/VehicleExampleMap/1/0G/S09YAH4R8CMVDMZ7A20STZ.PackageMetaData in its package
+[2023.04.01-01.41.39:492][636]LogWorldPartition: Warning: Actor /Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap:PersistentLevel.StaticMeshActor_20 is unreachable without properly detaching object /Game/__ExternalActors__/VehicleTemplate/Maps/VehicleExampleMap/1/6T/LR1OAKEVJOOPQRQLMJQ8VD.PackageMetaData in its package
+[2023.04.01-01.41.39:493][636]LogWorldPartition: Warning: Actor /Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap:PersistentLevel.StaticMeshActor_11 is unreachable without properly detaching object /Game/__ExternalActors__/VehicleTemplate/Maps/VehicleExampleMap/2/M5/B1Z4KPTFV1L2EREMS5IW1R.PackageMetaData in its package
+[2023.04.01-01.41.39:493][636]LogWorldPartition: Warning: Actor /Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap:PersistentLevel.SkyLight_1 is unreachable without properly detaching object /Game/__ExternalActors__/VehicleTemplate/Maps/VehicleExampleMap/3/WW/FO9B6T5LMMCOKJG4HCFNL1.PackageMetaData in its package
+[2023.04.01-01.41.39:493][636]LogWorldPartition: Warning: Actor /Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap:PersistentLevel.StaticMeshActor_UAID_A4AE111137DC5DFB00_1630210247 is unreachable without properly detaching object /Game/__ExternalActors__/VehicleTemplate/Maps/VehicleExampleMap/4/LP/UZ50PDVAY299IMPNI9D2JC.PackageMetaData in its package
+[2023.04.01-01.41.39:493][636]LogWorldPartition: Warning: Actor /Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap:PersistentLevel.VolumetricCloud_0 is unreachable without properly detaching object /Game/__ExternalActors__/VehicleTemplate/Maps/VehicleExampleMap/7/6B/35BADYNNBJZPEYUTHJKTQU.PackageMetaData in its package
+[2023.04.01-01.41.39:493][636]LogWorldPartition: Warning: Actor /Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap:PersistentLevel.StaticMeshActor_10 is unreachable without properly detaching object /Game/__ExternalActors__/VehicleTemplate/Maps/VehicleExampleMap/7/WI/5NFX0QG7YV9FB54TNR4PT1.PackageMetaData in its package
+[2023.04.01-01.41.39:493][636]LogWorldPartition: Warning: Actor /Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap:PersistentLevel.ExponentialHeightFog_0 is unreachable without properly detaching object /Game/__ExternalActors__/VehicleTemplate/Maps/VehicleExampleMap/8/VZ/RO3QWXLUI0FCFWSB7PRWYH.PackageMetaData in its package
+[2023.04.01-01.41.39:493][636]LogWorldPartition: Warning: Actor /Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap:PersistentLevel.StaticMeshActor_25 is unreachable without properly detaching object /Game/__ExternalActors__/VehicleTemplate/Maps/VehicleExampleMap/9/NC/X5FY5G6NYCW5E554TE5F5H.PackageMetaData in its package
+[2023.04.01-01.41.39:493][636]LogWorldPartition: Warning: Actor /Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap:PersistentLevel.PostProcessVolume_0 is unreachable without properly detaching object /Game/__ExternalActors__/VehicleTemplate/Maps/VehicleExampleMap/B/S4/39R99VDAXF7X1T8FW5O7G5.PackageMetaData in its package
+[2023.04.01-01.41.39:493][636]LogWorldPartition: Warning: Actor /Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap:PersistentLevel.StaticMeshActor_12 is unreachable without properly detaching object /Game/__ExternalActors__/VehicleTemplate/Maps/VehicleExampleMap/B/UP/HM3YG02LLRWGD06ZK1PRPJ.PackageMetaData in its package
+[2023.04.01-01.41.39:493][636]LogWorldPartition: Warning: Actor /Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap:PersistentLevel.StaticMeshActor_22 is unreachable without properly detaching object /Game/__ExternalActors__/VehicleTemplate/Maps/VehicleExampleMap/B/VA/BP3BNYMRT7OCWW3Q3M2ZTR.PackageMetaData in its package
+[2023.04.01-01.41.39:493][636]LogWorldPartition: Warning: Actor /Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap:PersistentLevel.StaticMeshActor_19 is unreachable without properly detaching object /Game/__ExternalActors__/VehicleTemplate/Maps/VehicleExampleMap/C/3W/RB6196BR3NVWEX5183BKEN.PackageMetaData in its package
+[2023.04.01-01.41.39:493][636]LogWorldPartition: Warning: Actor /Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap:PersistentLevel.StaticMeshActor_23 is unreachable without properly detaching object /Game/__ExternalActors__/VehicleTemplate/Maps/VehicleExampleMap/C/UF/QZCJ2TCKW7XORELZJOKKW3.PackageMetaData in its package
+[2023.04.01-01.41.39:493][636]LogWorldPartition: Warning: Actor /Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap:PersistentLevel.StaticMeshActor_9 is unreachable without properly detaching object /Game/__ExternalActors__/VehicleTemplate/Maps/VehicleExampleMap/E/Q9/7E8THLUEF2U8O6DZQRWSX9.PackageMetaData in its package
+[2023.04.01-01.41.39:493][636]LogWorldPartition: Warning: Actor /Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap:PersistentLevel.SkyAtmosphere_0 is unreachable without properly detaching object /Game/__ExternalActors__/VehicleTemplate/Maps/VehicleExampleMap/E/RG/6FX3FVZLOTLUYLWS5AEE1A.PackageMetaData in its package
+[2023.04.01-01.41.39:497][636]LogUObjectHash: Compacting FUObjectHashTables data took   1.23ms
+[2023.04.01-01.41.39:547][636]LogUObjectHash: Compacting FUObjectHashTables data took   1.15ms
+[2023.04.01-01.41.39:597][636]LogUObjectHash: Compacting FUObjectHashTables data took   0.52ms
+[2023.04.01-01.41.39:600][636]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/A/SP/XSBFX0LGZMU52H1EMQNCRK
+[2023.04.01-01.41.39:600][636]LogSavePackage: Moving '../../../../../CS380_AlternativeInquisitions/CS380_Final/Saved/XSBFX0LGZMU52H1EMQNCRK73099E1549B8F1D50FC57593DFB260BE.tmp' to '../../../../../CS380_AlternativeInquisitions/CS380_Final/Content/__ExternalActors__/Levels_Custom/VehicleExampleMap/A/SP/XSBFX0LGZMU52H1EMQNCRK.uasset'
+[2023.04.01-01.41.39:602][636]LogSavePackage: Moving output files for package: /Game/__ExternalObjects__/Levels_Custom/VehicleExampleMap/0/Z6/JUFI4VTUNFQO3RQSGN287J
+[2023.04.01-01.41.39:602][636]LogSavePackage: Moving '../../../../../CS380_AlternativeInquisitions/CS380_Final/Saved/JUFI4VTUNFQO3RQSGN287J493351C54FE11291FD1A1C9B596852C0.tmp' to '../../../../../CS380_AlternativeInquisitions/CS380_Final/Content/__ExternalObjects__/Levels_Custom/VehicleExampleMap/0/Z6/JUFI4VTUNFQO3RQSGN287J.uasset'
+[2023.04.01-01.41.39:603][636]LogSavePackage: Moving output files for package: /Game/__ExternalObjects__/Levels_Custom/VehicleExampleMap/2/7V/RA22UKM6PP6XQBTINC4UOC
+[2023.04.01-01.41.39:603][636]LogSavePackage: Moving '../../../../../CS380_AlternativeInquisitions/CS380_Final/Saved/RA22UKM6PP6XQBTINC4UOC10529AF44F1D7A48FBB4F2AAEAE3A411.tmp' to '../../../../../CS380_AlternativeInquisitions/CS380_Final/Content/__ExternalObjects__/Levels_Custom/VehicleExampleMap/2/7V/RA22UKM6PP6XQBTINC4UOC.uasset'
+[2023.04.01-01.41.39:604][636]LogSavePackage: Moving output files for package: /Game/__ExternalObjects__/Levels_Custom/VehicleExampleMap/6/UX/CLPZXER3481GUP427G5DVI
+[2023.04.01-01.41.39:604][636]LogSavePackage: Moving '../../../../../CS380_AlternativeInquisitions/CS380_Final/Saved/CLPZXER3481GUP427G5DVI808A1FCB40B9C82F3A98218074663723.tmp' to '../../../../../CS380_AlternativeInquisitions/CS380_Final/Content/__ExternalObjects__/Levels_Custom/VehicleExampleMap/6/UX/CLPZXER3481GUP427G5DVI.uasset'
+[2023.04.01-01.41.39:605][636]LogSavePackage: Moving output files for package: /Game/__ExternalObjects__/Levels_Custom/VehicleExampleMap/5/WV/UVN56WQ3WDCJHJTF89HO9B
+[2023.04.01-01.41.39:605][636]LogSavePackage: Moving '../../../../../CS380_AlternativeInquisitions/CS380_Final/Saved/UVN56WQ3WDCJHJTF89HO9B36C24A554CE7D88EC54696B746E0795F.tmp' to '../../../../../CS380_AlternativeInquisitions/CS380_Final/Content/__ExternalObjects__/Levels_Custom/VehicleExampleMap/5/WV/UVN56WQ3WDCJHJTF89HO9B.uasset'
+[2023.04.01-01.41.39:606][636]LogSavePackage: Moving output files for package: /Game/__ExternalObjects__/Levels_Custom/VehicleExampleMap/0/WN/GLMID2MM4LWQ52Y0WVS0PS
+[2023.04.01-01.41.39:606][636]LogSavePackage: Moving '../../../../../CS380_AlternativeInquisitions/CS380_Final/Saved/GLMID2MM4LWQ52Y0WVS0PS1B325BB14A9EFF3822DAC1A598543CA6.tmp' to '../../../../../CS380_AlternativeInquisitions/CS380_Final/Content/__ExternalObjects__/Levels_Custom/VehicleExampleMap/0/WN/GLMID2MM4LWQ52Y0WVS0PS.uasset'
+[2023.04.01-01.41.39:607][636]LogSavePackage: Moving output files for package: /Game/__ExternalObjects__/Levels_Custom/VehicleExampleMap/C/1C/08TA2V287GAOZ38330N1S9
+[2023.04.01-01.41.39:607][636]LogSavePackage: Moving '../../../../../CS380_AlternativeInquisitions/CS380_Final/Saved/08TA2V287GAOZ38330N1S915789A9D4507DD0EDEE3509F22588D2E.tmp' to '../../../../../CS380_AlternativeInquisitions/CS380_Final/Content/__ExternalObjects__/Levels_Custom/VehicleExampleMap/C/1C/08TA2V287GAOZ38330N1S9.uasset'
+[2023.04.01-01.41.39:616][636]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/1/TZ/KM5Z8LYZZVQHRYLR32PL03
+[2023.04.01-01.41.39:616][636]LogSavePackage: Moving '../../../../../CS380_AlternativeInquisitions/CS380_Final/Saved/KM5Z8LYZZVQHRYLR32PL03F6AAE2304E15D00AE446739A655C3D16.tmp' to '../../../../../CS380_AlternativeInquisitions/CS380_Final/Content/__ExternalActors__/Levels_Custom/VehicleExampleMap/1/TZ/KM5Z8LYZZVQHRYLR32PL03.uasset'
+[2023.04.01-01.41.39:617][636]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/5/35/LUJJ7X4R3VRS27GD5S7YMH
+[2023.04.01-01.41.39:617][636]LogSavePackage: Moving '../../../../../CS380_AlternativeInquisitions/CS380_Final/Saved/LUJJ7X4R3VRS27GD5S7YMH687BB15F4D9890DE5A2207B029B2F35F.tmp' to '../../../../../CS380_AlternativeInquisitions/CS380_Final/Content/__ExternalActors__/Levels_Custom/VehicleExampleMap/5/35/LUJJ7X4R3VRS27GD5S7YMH.uasset'
+[2023.04.01-01.41.39:619][636]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/A/ND/0JCR9XTVM9XEXOKR51JRF8
+[2023.04.01-01.41.39:619][636]LogSavePackage: Moving '../../../../../CS380_AlternativeInquisitions/CS380_Final/Saved/0JCR9XTVM9XEXOKR51JRF8A5E8A4484F6982429071E98689796981.tmp' to '../../../../../CS380_AlternativeInquisitions/CS380_Final/Content/__ExternalActors__/Levels_Custom/VehicleExampleMap/A/ND/0JCR9XTVM9XEXOKR51JRF8.uasset'
+[2023.04.01-01.41.39:620][636]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/B/2E/PC4SAYZXB1BH68NMVSRUBE
+[2023.04.01-01.41.39:620][636]LogSavePackage: Moving '../../../../../CS380_AlternativeInquisitions/CS380_Final/Saved/PC4SAYZXB1BH68NMVSRUBEEA8679214B93291994DF37AD30660B46.tmp' to '../../../../../CS380_AlternativeInquisitions/CS380_Final/Content/__ExternalActors__/Levels_Custom/VehicleExampleMap/B/2E/PC4SAYZXB1BH68NMVSRUBE.uasset'
+[2023.04.01-01.41.39:627][636]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/6/P5/Y7BL7L8NEPBDZY69YQ97K6
+[2023.04.01-01.41.39:628][636]LogSavePackage: Moving '../../../../../CS380_AlternativeInquisitions/CS380_Final/Saved/Y7BL7L8NEPBDZY69YQ97K69D2D3DB345B12222628315B951811314.tmp' to '../../../../../CS380_AlternativeInquisitions/CS380_Final/Content/__ExternalActors__/Levels_Custom/VehicleExampleMap/6/P5/Y7BL7L8NEPBDZY69YQ97K6.uasset'
+[2023.04.01-01.41.39:634][636]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/A/3G/C5YHBMHG4ANN4J93JABF1Y
+[2023.04.01-01.41.39:634][636]LogSavePackage: Moving '../../../../../CS380_AlternativeInquisitions/CS380_Final/Saved/C5YHBMHG4ANN4J93JABF1Y03D439CA4273B563EF63B78AB52F8627.tmp' to '../../../../../CS380_AlternativeInquisitions/CS380_Final/Content/__ExternalActors__/Levels_Custom/VehicleExampleMap/A/3G/C5YHBMHG4ANN4J93JABF1Y.uasset'
+[2023.04.01-01.41.39:635][636]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/9/2R/FWQJBGRCSE3RKBFCD3RYAJ
+[2023.04.01-01.41.39:635][636]LogSavePackage: Moving '../../../../../CS380_AlternativeInquisitions/CS380_Final/Saved/FWQJBGRCSE3RKBFCD3RYAJBA7C8A5241FE9EC7E896C49ABB0F68D6.tmp' to '../../../../../CS380_AlternativeInquisitions/CS380_Final/Content/__ExternalActors__/Levels_Custom/VehicleExampleMap/9/2R/FWQJBGRCSE3RKBFCD3RYAJ.uasset'
+[2023.04.01-01.41.39:636][636]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/0/D9/NRNBXLRZ1SJITVOAYY6EIW
+[2023.04.01-01.41.39:636][636]LogSavePackage: Moving '../../../../../CS380_AlternativeInquisitions/CS380_Final/Saved/NRNBXLRZ1SJITVOAYY6EIW3E6EC6544F091E03DD5F08BC39203FAA.tmp' to '../../../../../CS380_AlternativeInquisitions/CS380_Final/Content/__ExternalActors__/Levels_Custom/VehicleExampleMap/0/D9/NRNBXLRZ1SJITVOAYY6EIW.uasset'
+[2023.04.01-01.41.39:638][636]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/2/FE/GI2R0631RR2PA2PFZ3SESQ
+[2023.04.01-01.41.39:638][636]LogSavePackage: Moving '../../../../../CS380_AlternativeInquisitions/CS380_Final/Saved/GI2R0631RR2PA2PFZ3SESQ46E9DB5C4646ACA790141DA17EC84E75.tmp' to '../../../../../CS380_AlternativeInquisitions/CS380_Final/Content/__ExternalActors__/Levels_Custom/VehicleExampleMap/2/FE/GI2R0631RR2PA2PFZ3SESQ.uasset'
+[2023.04.01-01.41.39:639][636]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/D/MY/5N086NUT4TLR04GH7KK98U
+[2023.04.01-01.41.39:639][636]LogSavePackage: Moving '../../../../../CS380_AlternativeInquisitions/CS380_Final/Saved/5N086NUT4TLR04GH7KK98U4C849C1140E0BE6AF62B1F9908494EDC.tmp' to '../../../../../CS380_AlternativeInquisitions/CS380_Final/Content/__ExternalActors__/Levels_Custom/VehicleExampleMap/D/MY/5N086NUT4TLR04GH7KK98U.uasset'
+[2023.04.01-01.41.39:642][636]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/A/V4/0A5QW57O9CNLF9E7RLM0DR
+[2023.04.01-01.41.39:642][636]LogSavePackage: Moving '../../../../../CS380_AlternativeInquisitions/CS380_Final/Saved/0A5QW57O9CNLF9E7RLM0DR5B2CE97944B6FAE35A686A8CB2494C5F.tmp' to '../../../../../CS380_AlternativeInquisitions/CS380_Final/Content/__ExternalActors__/Levels_Custom/VehicleExampleMap/A/V4/0A5QW57O9CNLF9E7RLM0DR.uasset'
+[2023.04.01-01.41.39:643][636]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/6/DB/GDJIG157Z6YNQ1F09Q9WYU
+[2023.04.01-01.41.39:643][636]LogSavePackage: Moving '../../../../../CS380_AlternativeInquisitions/CS380_Final/Saved/GDJIG157Z6YNQ1F09Q9WYU3EF0146E431434E3E04A058D496C9CD6.tmp' to '../../../../../CS380_AlternativeInquisitions/CS380_Final/Content/__ExternalActors__/Levels_Custom/VehicleExampleMap/6/DB/GDJIG157Z6YNQ1F09Q9WYU.uasset'
+[2023.04.01-01.41.39:644][636]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/A/7C/ML7H1Z3GJAFRJ4O1H7NGTF
+[2023.04.01-01.41.39:644][636]LogSavePackage: Moving '../../../../../CS380_AlternativeInquisitions/CS380_Final/Saved/ML7H1Z3GJAFRJ4O1H7NGTFDF87F1EC4A27A95A943D69BAF449A4C7.tmp' to '../../../../../CS380_AlternativeInquisitions/CS380_Final/Content/__ExternalActors__/Levels_Custom/VehicleExampleMap/A/7C/ML7H1Z3GJAFRJ4O1H7NGTF.uasset'
+[2023.04.01-01.41.39:646][636]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/9/P8/5RP29HHH7L1A30IOQZG7NR
+[2023.04.01-01.41.39:646][636]LogSavePackage: Moving '../../../../../CS380_AlternativeInquisitions/CS380_Final/Saved/5RP29HHH7L1A30IOQZG7NR37DDB346483FA3BB136528AB1D6341EF.tmp' to '../../../../../CS380_AlternativeInquisitions/CS380_Final/Content/__ExternalActors__/Levels_Custom/VehicleExampleMap/9/P8/5RP29HHH7L1A30IOQZG7NR.uasset'
+[2023.04.01-01.41.39:647][636]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/5/TH/ZN3HMD9WV8P5S0W0B97YXF
+[2023.04.01-01.41.39:647][636]LogSavePackage: Moving '../../../../../CS380_AlternativeInquisitions/CS380_Final/Saved/ZN3HMD9WV8P5S0W0B97YXFECA1E6AC49551CBD6681669377BBF9D2.tmp' to '../../../../../CS380_AlternativeInquisitions/CS380_Final/Content/__ExternalActors__/Levels_Custom/VehicleExampleMap/5/TH/ZN3HMD9WV8P5S0W0B97YXF.uasset'
+[2023.04.01-01.41.39:790][636]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/1/AC/PV53K807SWCJTLEORV5B15
+[2023.04.01-01.41.39:790][636]LogSavePackage: Moving '../../../../../CS380_AlternativeInquisitions/CS380_Final/Saved/PV53K807SWCJTLEORV5B15F4445E2C42C8E64693B257999CB30148.tmp' to '../../../../../CS380_AlternativeInquisitions/CS380_Final/Content/__ExternalActors__/Levels_Custom/VehicleExampleMap/1/AC/PV53K807SWCJTLEORV5B15.uasset'
+[2023.04.01-01.41.39:797][636]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/0/XU/8NEXOPTYR6MQ2A5YZFVPKV
+[2023.04.01-01.41.39:797][636]LogSavePackage: Moving '../../../../../CS380_AlternativeInquisitions/CS380_Final/Saved/8NEXOPTYR6MQ2A5YZFVPKV9F36EB9846E998553F4E28933A8F9ADF.tmp' to '../../../../../CS380_AlternativeInquisitions/CS380_Final/Content/__ExternalActors__/Levels_Custom/VehicleExampleMap/0/XU/8NEXOPTYR6MQ2A5YZFVPKV.uasset'
+[2023.04.01-01.41.39:799][636]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/3/RO/M13JZH5I1JOYO7AUE9J4T4
+[2023.04.01-01.41.39:799][636]LogSavePackage: Moving '../../../../../CS380_AlternativeInquisitions/CS380_Final/Saved/M13JZH5I1JOYO7AUE9J4T444F2DF4C40C352E0F78B9EADF2F9A289.tmp' to '../../../../../CS380_AlternativeInquisitions/CS380_Final/Content/__ExternalActors__/Levels_Custom/VehicleExampleMap/3/RO/M13JZH5I1JOYO7AUE9J4T4.uasset'
+[2023.04.01-01.41.39:800][636]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/6/17/BJEE5FY2C48AT7HJG63MXN
+[2023.04.01-01.41.39:800][636]LogSavePackage: Moving '../../../../../CS380_AlternativeInquisitions/CS380_Final/Saved/BJEE5FY2C48AT7HJG63MXNEE40E0EC4ED20C8923952D8AF15D9ED0.tmp' to '../../../../../CS380_AlternativeInquisitions/CS380_Final/Content/__ExternalActors__/Levels_Custom/VehicleExampleMap/6/17/BJEE5FY2C48AT7HJG63MXN.uasset'
+[2023.04.01-01.41.39:801][636]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/0/YJ/W5ARD4QLG7PBDGH9T9BEKG
+[2023.04.01-01.41.39:801][636]LogSavePackage: Moving '../../../../../CS380_AlternativeInquisitions/CS380_Final/Saved/W5ARD4QLG7PBDGH9T9BEKG7F98D46241CEE8583EA6FFA2C6699280.tmp' to '../../../../../CS380_AlternativeInquisitions/CS380_Final/Content/__ExternalActors__/Levels_Custom/VehicleExampleMap/0/YJ/W5ARD4QLG7PBDGH9T9BEKG.uasset'
+[2023.04.01-01.41.39:802][636]Message dialog closed, result: Ok, title: Unable to Check Out From Source Control!, text: The following assets could not be successfully checked out from source control:
+/Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/A/SP/XSBFX0LGZMU52H1EMQNCRK
+/Game/__ExternalObjects__/Levels_Custom/VehicleExampleMap/0/Z6/JUFI4VTUNFQO3RQSGN287J
+/Game/__ExternalObjects__/Levels_Custom/VehicleExampleMap/2/7V/RA22UKM6PP6XQBTINC4UOC
+/Game/__ExternalObjects__/Levels_Custom/VehicleExampleMap/6/UX/CLPZXER3481GUP427G5DVI
+/Game/__ExternalObjects__/Levels_Custom/VehicleExampleMap/5/WV/UVN56WQ3WDCJHJTF89HO9B
+/Game/__ExternalObjects__/Levels_Custom/VehicleExampleMap/0/WN/GLMID2MM4LWQ52Y0WVS0PS
+/Game/__ExternalObjects__/Levels_Custom/VehicleExampleMap/C/1C/08TA2V287GAOZ38330N1S9
+/Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/1/TZ/KM5Z8LYZZVQHRYLR32PL03
+/Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/5/35/LUJJ7X4R3VRS27GD5S7YMH
+/Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/A/ND/0JCR9XTVM9XEXOKR51JRF8
+/Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/B/2E/PC4SAYZXB1BH68NMVSRUBE
+/Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/6/P5/Y7BL7L8NEPBDZY69YQ97K6
+/Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/A/3G/C5YHBMHG4ANN4J93JABF1Y
+/Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/9/2R/FWQJBGRCSE3RKBFCD3RYAJ
+/Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/0/D9/NRNBXLRZ1SJITVOAYY6EIW
+/Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/2/FE/GI2R0631RR2PA2PFZ3SESQ
+/Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/D/MY/5N086NUT4TLR04GH7KK98U
+/Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/A/V4/0A5QW57O9CNLF9E7RLM0DR
+/Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/6/DB/GDJIG157Z6YNQ1F09Q9WYU
+/Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/A/7C/ML7H1Z3GJAFRJ4O1H7NGTF
+/Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/9/P8/5RP29HHH7L1A30IOQZG7NR
+/Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/5/TH/ZN3HMD9WV8P5S0W0B97YXF
+/Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/1/AC/PV53K807SWCJTLEORV5B15
+/Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/0/XU/8NEXOPTYR6MQ2A5YZFVPKV
+/Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/3/RO/M13JZH5I1JOYO7AUE9J4T4
+/Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/6/17/BJEE5FY2C48AT7HJG63MXN
+/Game/__ExternalActors__/Levels_Custom/VehicleExampleMap/0/YJ/W5ARD4QLG7PBDGH9T9BEKG
+[2023.04.01-01.41.39:850][636]LogUObjectHash: Compacting FUObjectHashTables data took   0.50ms
+[2023.04.01-01.41.39:858][636]LogSavePackage: Moving output files for package: /Game/Levels_Custom/VehicleExampleMap
+[2023.04.01-01.41.39:858][636]LogSavePackage: Moving '../../../../../CS380_AlternativeInquisitions/CS380_Final/Saved/VehicleExampleMapC552B02C46ED2F80A54F01B1B26B475C.tmp' to '../../../../../CS380_AlternativeInquisitions/CS380_Final/Content/Levels_Custom/VehicleExampleMap.umap'
+[2023.04.01-01.41.39:877][636]LogFileHelpers: Saving map 'VehicleExampleMap' took 0.678
+[2023.04.01-01.41.39:878][636]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/VehicleTemplate/Maps/VehicleExampleMap" FILE="../../../../../CS380_AlternativeInquisitions/CS380_Final/Content/VehicleTemplate/Maps/VehicleExampleMap.umap" SILENT=true
+[2023.04.01-01.41.39:878][636]LogSavePackage: Moving output files for package: /Game/VehicleTemplate/Maps/VehicleExampleMap
+[2023.04.01-01.41.39:878][636]LogSavePackage: Moving '../../../../../CS380_AlternativeInquisitions/CS380_Final/Saved/VehicleExampleMapB6EC1E02467ABFBA0ADA34976C107470.tmp' to '../../../../../CS380_AlternativeInquisitions/CS380_Final/Content/VehicleTemplate/Maps/VehicleExampleMap.umap'
+[2023.04.01-01.41.39:912][636]AssetCheck: New page: Asset Save: multiple assets
+[2023.04.01-01.41.39:912][636]LogContentValidation: Display: Validating ActorFolder /Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap:PersistentLevel.ActorFolder_UID_EC6DE339-4ED87B0D-EEC32D97-314B8C12
+[2023.04.01-01.41.39:912][636]LogContentValidation: Display: Validating ActorFolder /Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap:PersistentLevel.ActorFolder_UID_912F765E-4714A1DB-296369A3-E4390900
+[2023.04.01-01.41.39:912][636]LogContentValidation: Display: Validating ActorFolder /Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap:PersistentLevel.ActorFolder_UID_602030AD-4CB26C05-0EF7B98F-CA62FBCA
+[2023.04.01-01.41.39:912][636]LogContentValidation: Display: Validating ActorFolder /Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap:PersistentLevel.ActorFolder_UID_FEEBC32E-4868314E-D344A2BD-A4C895E1
+[2023.04.01-01.41.39:912][636]LogContentValidation: Display: Validating ActorFolder /Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap:PersistentLevel.ActorFolder_UID_6FA7726D-48C50C2F-676EE28F-88CF905C
+[2023.04.01-01.41.39:912][636]LogContentValidation: Display: Validating ActorFolder /Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap:PersistentLevel.ActorFolder_UID_EC5389A3-411DCBDB-8DD9AAAE-3D5DDEDA
+[2023.04.01-01.41.39:912][636]LogContentValidation: Display: Validating WorldDataLayers /Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap:PersistentLevel.WorldDataLayers
+[2023.04.01-01.41.39:912][636]LogContentValidation: Display: Validating World /Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap
+[2023.04.01-01.41.39:912][636]LogContentValidation: Display: Validating LandscapeStreamingProxy /Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap:PersistentLevel.LandscapeStreamingProxy_BN55SI9ETKGRY904720BQHPG3_1_0_0_0
+[2023.04.01-01.41.39:912][636]LogContentValidation: Display: Validating StaticMeshActor /Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap:PersistentLevel.StaticMeshActor_15
+[2023.04.01-01.41.39:912][636]LogContentValidation: Display: Validating StaticMeshActor /Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap:PersistentLevel.StaticMeshActor_5
+[2023.04.01-01.41.39:912][636]LogContentValidation: Display: Validating StaticMeshActor /Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap:PersistentLevel.StaticMeshActor_13
+[2023.04.01-01.41.39:912][636]LogContentValidation: Display: Validating LandscapeStreamingProxy /Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap:PersistentLevel.LandscapeStreamingProxy_BN55SI9ETKGRY904720BQHPG3_1_1_1_0
+[2023.04.01-01.41.39:912][636]LogContentValidation: Display: Validating LandscapeStreamingProxy /Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap:PersistentLevel.LandscapeStreamingProxy_BN55SI9ETKGRY904720BQHPG3_1_0_1_0
+[2023.04.01-01.41.39:912][636]LogContentValidation: Display: Validating StaticMeshActor /Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap:PersistentLevel.StaticMeshActor_0
+[2023.04.01-01.41.39:912][636]LogContentValidation: Display: Validating WorldPartitionMiniMap /Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap:PersistentLevel.WorldPartitionMiniMap_0
+[2023.04.01-01.41.39:912][636]LogContentValidation: Display: Validating Landscape /Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap:PersistentLevel.Landscape_0
+[2023.04.01-01.41.39:912][636]LogContentValidation: Display: Validating StaticMeshActor /Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap:PersistentLevel.StaticMeshActor_18
+[2023.04.01-01.41.39:912][636]LogContentValidation: Display: Validating StaticMeshActor /Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap:PersistentLevel.StaticMeshActor_14
+[2023.04.01-01.41.39:912][636]LogContentValidation: Display: Validating StaticMeshActor /Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap:PersistentLevel.StaticMeshActor_4
+[2023.04.01-01.41.39:912][636]LogContentValidation: Display: Validating StaticMeshActor /Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap:PersistentLevel.StaticMeshActor_17
+[2023.04.01-01.41.39:912][636]LogContentValidation: Display: Validating TextRenderActor /Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap:PersistentLevel.TextRenderActor_1
+[2023.04.01-01.41.39:912][636]LogContentValidation: Display: Validating StaticMeshActor /Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap:PersistentLevel.StaticMeshActor_16
+[2023.04.01-01.41.39:912][636]LogContentValidation: Display: Validating LandscapeSplineActor /Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap:PersistentLevel.LandscapeSplineActor_0
+[2023.04.01-01.41.39:912][636]LogContentValidation: Display: Validating LandscapeStreamingProxy /Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap:PersistentLevel.LandscapeStreamingProxy_BN55SI9ETKGRY904720BQHPG3_1_1_0_0
+[2023.04.01-01.41.39:912][636]LogContentValidation: Display: Validating DirectionalLight /Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap:PersistentLevel.DirectionalLight_0
+[2023.04.01-01.41.39:912][636]LogContentValidation: Display: Validating StaticMeshActor /Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap:PersistentLevel.StaticMeshActor_6
+[2023.04.01-01.41.39:912][636]LogContentValidation: Display: Validating CineCameraActor /Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap:PersistentLevel.CineCameraActor_UAID_244BFE993817B67401_1984387687
+[2023.04.01-01.41.39:912][636]LogContentValidation: Display: Validating ObjectRedirector /Game/VehicleTemplate/Maps/VehicleExampleMap.VehicleExampleMap
+[2023.04.01-01.41.39:912][636]LogContentValidation: Display: Validating ObjectRedirector /Game/VehicleTemplate/Maps/VehicleExampleMap.VehicleExampleMap_C
+[2023.04.01-01.41.39:912][636]LogContentValidation: Display: Validating ObjectRedirector /Game/VehicleTemplate/Maps/VehicleExampleMap.Default__VehicleExampleMap_C
+[2023.04.01-01.41.40:302][636]LogUObjectHash: Compacting FUObjectHashTables data took   1.64ms
+[2023.04.01-01.42.04:231][499]LogWorld: UWorld::CleanupWorld for World_7, bSessionEnded=true, bCleanupResources=true
+[2023.04.01-01.42.04:231][499]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.04.01-01.42.16:837][674]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2023.04.01-01.42.16:837][674]LogWorld: UWorld::CleanupWorld for World_8, bSessionEnded=true, bCleanupResources=true
+[2023.04.01-01.42.16:837][674]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.04.01-01.42.16:876][674]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/VehicleTemplate/Blueprints/VehicleAdvGameMode.VehicleAdvGameMode
+[2023.04.01-01.42.16:876][674]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2023.04.01-01.42.37:444][590]LogEditorClassViewer: Warning: Class /Engine/Tutorial/InWorldBlueprintEditing/TutorialAssets/IWBE_Blutility.IWBE_Blutility_C has parent /Script/Blutility.PlacedEditorUtilityBase, but this parent is not found. The Class will not be shown in ClassViewer.
+[2023.04.01-01.42.48:674][593]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2023.04.01-01.42.48:678][593]LogWorldPartition: Display: GenerateStreaming started...
+[2023.04.01-01.42.48:678][593]LogWorldPartition: Display: GetPartitionedActors started...
+[2023.04.01-01.42.48:678][593]LogWorldPartition: Warning: Invalid world bounds, grid partitioning will use a runtime grid with 1 cell.
+[2023.04.01-01.42.48:678][593]LogWorldPartition: Display: ValidateSingleActorReferer started...
+[2023.04.01-01.42.48:678][593]LogWorldPartition: Display: ValidateSingleActorReferer took 0 us
+[2023.04.01-01.42.48:678][593]LogWorldPartition: Display: GetPartitionedActors took 45 us
+[2023.04.01-01.42.48:679][593]LogWorldPartition: Display: GenerateStreaming took 209 us
+[2023.04.01-01.42.48:679][593]BlueprintLog: New page: Pre-Play auto-recompile
+[2023.04.01-01.42.48:679][593]LogPlayLevel: [PlayLevel] Compiling VehicleExampleMap before play...
+[2023.04.01-01.42.48:782][593]LogUObjectHash: Compacting FUObjectHashTables data took   1.63ms
+[2023.04.01-01.42.48:786][593]LogPlayLevel: PlayLevel: Blueprint regeneration took 107 ms (1 blueprints)
+[2023.04.01-01.42.48:786][593]PIE: New page: PIE session: VehicleExampleMap (Mar 31, 2023, 11:42:48 AM)
+[2023.04.01-01.42.48:811][593]LogPlayLevel: Creating play world package: /Game/Levels_Custom/UEDPIE_0_VehicleExampleMap
+[2023.04.01-01.42.48:944][593]LogWorldPartition: Initial Data Layer Effective States Activated() Loaded()
+[2023.04.01-01.42.48:944][593]LogPlayLevel: PIE: StaticDuplicateObject took: (0.132309s)
+[2023.04.01-01.42.48:944][593]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels_Custom/VehicleExampleMap.VehicleExampleMap to /Game/Levels_Custom/UEDPIE_0_VehicleExampleMap.VehicleExampleMap (0.132419s)
+[2023.04.01-01.42.48:944][593]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2023.04.01-01.42.48:944][593]LogAIModule: Creating AISystem for world VehicleExampleMap
+[2023.04.01-01.42.48:945][593]LogWorldPartition: Display: WorldPartition initialize started...
+[2023.04.01-01.42.48:945][593]LogWorldPartition: UWorldPartition::Initialize(IsEditor=0, IsGame=0, IsCooking=0)
+[2023.04.01-01.42.48:966][593]LogWorldPartition: Display: WorldPartition initialize took 20 ms
+[2023.04.01-01.42.48:966][593]LogPlayLevel: PIE: World Init took: (0.021883s)
+[2023.04.01-01.42.49:016][593]LogUObjectHash: Compacting FUObjectHashTables data took   1.55ms
+[2023.04.01-01.42.49:017][593]LogAudio: Display: Creating Audio Device:                 Id: 4, Scope: Unique, Realtime: True
+[2023.04.01-01.42.49:017][593]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2023.04.01-01.42.49:017][593]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2023.04.01-01.42.49:017][593]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2023.04.01-01.42.49:017][593]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2023.04.01-01.42.49:017][593]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2023.04.01-01.42.49:017][593]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2023.04.01-01.42.49:017][593]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2023.04.01-01.42.49:017][593]LogAudio: Display: AudioDevice MaxSources: 32
+[2023.04.01-01.42.49:018][593]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2023.04.01-01.42.49:018][593]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2023.04.01-01.42.49:018][593]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2023.04.01-01.42.49:019][593]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2023.04.01-01.42.49:040][593]LogAudioMixer: Display: Using Audio Hardware Device Headset_ (High Definition Audio Device)
+[2023.04.01-01.42.49:040][593]LogAudioMixer: Display: Initializing Sound Submixes...
+[2023.04.01-01.42.49:040][593]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2023.04.01-01.42.49:040][593]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2023.04.01-01.42.49:041][593]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=4
+[2023.04.01-01.42.49:041][593]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=4
+[2023.04.01-01.42.49:043][593]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=4
+[2023.04.01-01.42.49:043][593]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=4
+[2023.04.01-01.42.49:043][593]LogInit: FAudioDevice initialized.
+[2023.04.01-01.42.49:043][593]LogAudio: Display: Audio Device (ID: 4) registered with world 'VehicleExampleMap'.
+[2023.04.01-01.42.49:054][593]LogLoad: Game class is 'VehicleAdvGameMode_C'
+[2023.04.01-01.42.49:058][593]LogWorld: Bringing World /Game/Levels_Custom/UEDPIE_0_VehicleExampleMap.VehicleExampleMap up for play (max tick rate 0) at 2023.03.31-18.42.49
+[2023.04.01-01.42.49:058][593]LogWorld: Bringing up level for play took: 0.004117
+[2023.04.01-01.42.49:060][593]LogOnline: OSS: Created online subsystem instance for: :Context_14
+[2023.04.01-01.42.49:061][593]LogSpawn: Warning: SpawnActor failed because no class was specified
+[2023.04.01-01.42.49:062][593]LogWorldPartition: New Streaming Source: VehiclePlayerController_C_0 -> Position: X=1755.601 Y=-11445.875 Z=7468.787
+[2023.04.01-01.42.49:062][593]LogWorldPartition: Warning: Invalid world bounds, grid partitioning will use a runtime grid with 1 cell.
+[2023.04.01-01.42.49:063][593]Cmd: r.motionblur.amount 0
+[2023.04.01-01.42.49:063][593]r.MotionBlur.Amount = "0"
+[2023.04.01-01.42.49:063][593]PIE: Server logged in
+[2023.04.01-01.42.49:064][593]PIE: Play in editor total start time 0.387 seconds.
+[2023.04.01-01.43.17:671][244]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2023.04.01-01.43.17:671][244]LogWorld: BeginTearingDown for /Game/Levels_Custom/UEDPIE_0_VehicleExampleMap
+[2023.04.01-01.43.17:672][244]LogWorld: UWorld::CleanupWorld for VehicleExampleMap, bSessionEnded=true, bCleanupResources=true
+[2023.04.01-01.43.17:672][244]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.04.01-01.43.17:685][244]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2023.04.01-01.43.17:692][244]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.04.01-01.43.17:743][244]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2023.04.01-01.43.17:743][244]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=4
+[2023.04.01-01.43.17:745][244]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=4
+[2023.04.01-01.43.17:753][244]LogUObjectHash: Compacting FUObjectHashTables data took   1.58ms
+[2023.04.01-01.43.17:824][245]LogPlayLevel: Display: Destroying online subsystem :Context_14
