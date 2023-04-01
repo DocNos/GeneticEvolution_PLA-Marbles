@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "CS380_FinalCPP",
+			"Path": "Z:\\CS380_AlternativeInquisitions\\CS380_FinalCPP\\Source\\CS380_FinalCPP.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "CS380_FinalCPPEditor",
+			"Path": "Z:\\CS380_AlternativeInquisitions\\CS380_FinalCPP\\Source\\CS380_FinalCPPEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

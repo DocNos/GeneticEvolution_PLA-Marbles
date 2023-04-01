@@ -1,0 +1,14 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "z:\\cs380_alternativeinquisitions\\cs380_finalcpp\\source\\cs380_finalcpp\\cs380_finalcpp.cpp",
+        "ProvidedModule": "",
+        "PCH": "z:\\cs380_alternativeinquisitions\\cs380_finalcpp\\intermediate\\build\\win64\\cs380_finalcppeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "z:\\cs380_alternativeinquisitions\\cs380_finalcpp\\intermediate\\build\\win64\\unrealeditor\\development\\cs380_finalcpp\\definitions.cs380_finalcpp.h",
+            "z:\\cs380_alternativeinquisitions\\cs380_finalcpp\\source\\cs380_finalcpp\\cs380_finalcpp.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
