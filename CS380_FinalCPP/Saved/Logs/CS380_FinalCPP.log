@@ -891,3 +891,78 @@ Continuing with the rename may require changes to fix references in code or proj
 [2023.04.02-21.29.23:242][953]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=2
 [2023.04.02-21.29.23:247][953]LogUObjectHash: Compacting FUObjectHashTables data took   0.49ms
 [2023.04.02-21.29.23:282][956]LogPlayLevel: Display: Destroying online subsystem :Context_3
+[2023.04.02-21.30.29:260][326]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Gamemode/ManualControl.ManualControl
+[2023.04.02-21.30.29:261][326]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2023.04.02-21.30.34:711][510]LogSlate: Window 'ManualControl' being destroyed
+[2023.04.02-21.30.41:477][302]LogEditorClassViewer: Warning: Class /Engine/Tutorial/InWorldBlueprintEditing/TutorialAssets/IWBE_Blutility.IWBE_Blutility_C has parent /Script/Blutility.PlacedEditorUtilityBase, but this parent is not found. The Class will not be shown in ClassViewer.
+[2023.04.02-21.31.01:688][553]LogSlateStyle: Warning: Missing Resource from 'CoreStyle' Style: 'Unable to find Brush 'ContentBrowser.ListViewFolderIcon.Base'.'
+[2023.04.02-21.31.01:688][553]LogSlateStyle: Warning: Missing Resource from 'CoreStyle' Style: 'Unable to find Brush 'ContentBrowser.ListViewFolderIcon.Mask'.'
+[2023.04.02-21.31.03:508][757]LogMetaData: Removing '/Game/BP/SportsCar/SportsCar_Pawn.SportsCar_Pawn_C' ref from Metadata '/Game/Vehicles/BP/SportsCar/SportsCar_Pawn.PackageMetaData'
+[2023.04.02-21.31.03:508][757]LogMetaData: Removing '/Game/BP/SportsCar/SportsCar_Pawn.SportsCar_Pawn:BrakeLights.K2Node_FunctionEntry_0' ref from Metadata '/Game/Vehicles/BP/SportsCar/SportsCar_Pawn.PackageMetaData'
+[2023.04.02-21.31.03:508][757]LogMetaData: Removing '/Game/BP/SportsCar/SportsCar_Pawn.SKEL_SportsCar_Pawn_C:InpAxisEvt_MoveRight_K2Node_InputAxisEvent_1' ref from Metadata '/Game/Vehicles/BP/SportsCar/SportsCar_Pawn.PackageMetaData'
+[2023.04.02-21.31.03:508][757]LogMetaData: Removing '/Game/BP/SportsCar/SportsCar_Pawn.SKEL_SportsCar_Pawn_C:InpAxisEvt_MoveForward_K2Node_InputAxisEvent_4' ref from Metadata '/Game/Vehicles/BP/SportsCar/SportsCar_Pawn.PackageMetaData'
+[2023.04.02-21.31.03:508][757]LogMetaData: Removing '/Game/BP/SportsCar/SportsCar_Pawn.SKEL_SportsCar_Pawn_C:ReceiveBeginPlay' ref from Metadata '/Game/Vehicles/BP/SportsCar/SportsCar_Pawn.PackageMetaData'
+[2023.04.02-21.31.03:508][757]LogMetaData: Removing '/Game/BP/SportsCar/SportsCar_Pawn.SKEL_SportsCar_Pawn_C:ReceiveTick' ref from Metadata '/Game/Vehicles/BP/SportsCar/SportsCar_Pawn.PackageMetaData'
+[2023.04.02-21.31.03:508][757]LogMetaData: Removing '/Game/BP/SportsCar/SportsCar_Pawn.SKEL_SportsCar_Pawn_C:UserConstructionScript' ref from Metadata '/Game/Vehicles/BP/SportsCar/SportsCar_Pawn.PackageMetaData'
+[2023.04.02-21.31.03:508][757]LogMetaData: Removing '/Game/BP/SportsCar/SportsCar_Pawn.SKEL_SportsCar_Pawn_C:BrakeLights' ref from Metadata '/Game/Vehicles/BP/SportsCar/SportsCar_Pawn.PackageMetaData'
+[2023.04.02-21.31.03:508][757]LogMetaData: Removing '/Game/BP/SportsCar/SportsCar_Pawn.SKEL_SportsCar_Pawn_C' ref from Metadata '/Game/Vehicles/BP/SportsCar/SportsCar_Pawn.PackageMetaData'
+[2023.04.02-21.31.03:508][757]LogMetaData: Removing '/Game/BP/SportsCar/SportsCar_Pawn.SportsCar_Pawn_C:ReceiveTick' ref from Metadata '/Game/Vehicles/BP/SportsCar/SportsCar_Pawn.PackageMetaData'
+[2023.04.02-21.31.03:508][757]LogMetaData: Removing '/Game/BP/SportsCar/SportsCar_Pawn.SportsCar_Pawn_C:ReceiveBeginPlay' ref from Metadata '/Game/Vehicles/BP/SportsCar/SportsCar_Pawn.PackageMetaData'
+[2023.04.02-21.31.03:508][757]LogMetaData: Removing '/Game/BP/SportsCar/SportsCar_Pawn.SportsCar_Pawn_C:BrakeLights' ref from Metadata '/Game/Vehicles/BP/SportsCar/SportsCar_Pawn.PackageMetaData'
+[2023.04.02-21.31.03:510][757]LogMetaData: Removing '/Game/BP/BP_SceneManager.BP_SceneManager:UserConstructionScript.K2Node_FunctionEntry_0' ref from Metadata '/Game/Vehicles/BP/BP_SceneManager.PackageMetaData'
+[2023.04.02-21.31.03:510][757]LogMetaData: Removing '/Game/BP/BP_SceneManager.BP_SceneManager_C' ref from Metadata '/Game/Vehicles/BP/BP_SceneManager.PackageMetaData'
+[2023.04.02-21.31.03:510][757]LogMetaData: Removing '/Game/BP/BP_SceneManager.BP_SceneManager:EventGraph.K2Node_Event_0' ref from Metadata '/Game/Vehicles/BP/BP_SceneManager.PackageMetaData'
+[2023.04.02-21.31.03:510][757]LogMetaData: Removing '/Game/BP/BP_SceneManager.BP_SceneManager:EventGraph.K2Node_Event_1' ref from Metadata '/Game/Vehicles/BP/BP_SceneManager.PackageMetaData'
+[2023.04.02-21.31.03:510][757]LogMetaData: Removing '/Game/BP/BP_SceneManager.BP_SceneManager:EventGraph.K2Node_Event_2' ref from Metadata '/Game/Vehicles/BP/BP_SceneManager.PackageMetaData'
+[2023.04.02-21.31.03:510][757]LogMetaData: Removing '/Game/BP/BP_SceneManager.SKEL_BP_SceneManager_C:ReceiveBeginPlay' ref from Metadata '/Game/Vehicles/BP/BP_SceneManager.PackageMetaData'
+[2023.04.02-21.31.03:510][757]LogMetaData: Removing '/Game/BP/BP_SceneManager.SKEL_BP_SceneManager_C:ReceiveActorBeginOverlap' ref from Metadata '/Game/Vehicles/BP/BP_SceneManager.PackageMetaData'
+[2023.04.02-21.31.03:510][757]LogMetaData: Removing '/Game/BP/BP_SceneManager.SKEL_BP_SceneManager_C:ReceiveTick' ref from Metadata '/Game/Vehicles/BP/BP_SceneManager.PackageMetaData'
+[2023.04.02-21.31.03:510][757]LogMetaData: Removing '/Game/BP/BP_SceneManager.SKEL_BP_SceneManager_C:UserConstructionScript' ref from Metadata '/Game/Vehicles/BP/BP_SceneManager.PackageMetaData'
+[2023.04.02-21.31.03:510][757]LogMetaData: Removing '/Game/BP/BP_SceneManager.SKEL_BP_SceneManager_C' ref from Metadata '/Game/Vehicles/BP/BP_SceneManager.PackageMetaData'
+[2023.04.02-21.31.03:510][757]LogMetaData: Removing '/Game/BP/BP_SceneManager.BP_SceneManager_C:ReceiveBeginPlay' ref from Metadata '/Game/Vehicles/BP/BP_SceneManager.PackageMetaData'
+[2023.04.02-21.31.03:512][757]LogMetaData: Removing '/Game/BP/SportsCar/SportsCar_WheelsRear.SportsCar_WheelsRear_C' ref from Metadata '/Game/Vehicles/BP/SportsCar/SportsCar_WheelsRear.PackageMetaData'
+[2023.04.02-21.31.03:512][757]LogMetaData: Removing '/Game/BP/SportsCar/SportsCar_WheelsRear.SKEL_SportsCar_WheelsRear_C' ref from Metadata '/Game/Vehicles/BP/SportsCar/SportsCar_WheelsRear.PackageMetaData'
+[2023.04.02-21.31.03:512][757]LogMetaData: Removing '/Game/BP/SportsCar/SportsCar_WheelsFront.SportsCar_WheelsFront_C' ref from Metadata '/Game/Vehicles/BP/SportsCar/SportsCar_WheelsFront.PackageMetaData'
+[2023.04.02-21.31.03:512][757]LogMetaData: Removing '/Game/BP/SportsCar/SportsCar_WheelsFront.SKEL_SportsCar_WheelsFront_C' ref from Metadata '/Game/Vehicles/BP/SportsCar/SportsCar_WheelsFront.PackageMetaData'
+[2023.04.02-21.31.03:626][757]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP/SportsCar/SportsCar_Pawn" FILE="../../../../../CS380_AlternativeInquisitions/CS380_FinalCPP/Content/BP/SportsCar/SportsCar_Pawn.uasset" SILENT=true
+[2023.04.02-21.31.03:643][757]LogSavePackage: Moving output files for package: /Game/BP/SportsCar/SportsCar_Pawn
+[2023.04.02-21.31.03:643][757]LogSavePackage: Moving '../../../../../CS380_AlternativeInquisitions/CS380_FinalCPP/Saved/SportsCar_PawnEFDF3BE24A8794F5C2FF8D87DC5DA234.tmp' to '../../../../../CS380_AlternativeInquisitions/CS380_FinalCPP/Content/BP/SportsCar/SportsCar_Pawn.uasset'
+[2023.04.02-21.31.03:644][757]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Vehicles/BP/SportsCar/SportsCar_Pawn" FILE="../../../../../CS380_AlternativeInquisitions/CS380_FinalCPP/Content/Vehicles/BP/SportsCar/SportsCar_Pawn.uasset" SILENT=true
+[2023.04.02-21.31.03:645][757]LogSavePackage: Moving output files for package: /Game/Vehicles/BP/SportsCar/SportsCar_Pawn
+[2023.04.02-21.31.03:645][757]LogSavePackage: Moving '../../../../../CS380_AlternativeInquisitions/CS380_FinalCPP/Saved/SportsCar_PawnFFD5A2DB4638EC15E12C24BE3DA91B3F.tmp' to '../../../../../CS380_AlternativeInquisitions/CS380_FinalCPP/Content/Vehicles/BP/SportsCar/SportsCar_Pawn.uasset'
+[2023.04.02-21.31.03:645][757]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP/BP_SceneManager" FILE="../../../../../CS380_AlternativeInquisitions/CS380_FinalCPP/Content/BP/BP_SceneManager.uasset" SILENT=true
+[2023.04.02-21.31.03:650][757]LogSavePackage: Moving output files for package: /Game/BP/BP_SceneManager
+[2023.04.02-21.31.03:650][757]LogSavePackage: Moving '../../../../../CS380_AlternativeInquisitions/CS380_FinalCPP/Saved/BP_SceneManager393489834059652CFF09C9B2726932BB.tmp' to '../../../../../CS380_AlternativeInquisitions/CS380_FinalCPP/Content/BP/BP_SceneManager.uasset'
+[2023.04.02-21.31.03:651][757]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Vehicles/BP/BP_SceneManager" FILE="../../../../../CS380_AlternativeInquisitions/CS380_FinalCPP/Content/Vehicles/BP/BP_SceneManager.uasset" SILENT=true
+[2023.04.02-21.31.03:651][757]LogSavePackage: Moving output files for package: /Game/Vehicles/BP/BP_SceneManager
+[2023.04.02-21.31.03:651][757]LogSavePackage: Moving '../../../../../CS380_AlternativeInquisitions/CS380_FinalCPP/Saved/BP_SceneManager126982BE4C2EF069C2B726A7DADB2F2D.tmp' to '../../../../../CS380_AlternativeInquisitions/CS380_FinalCPP/Content/Vehicles/BP/BP_SceneManager.uasset'
+[2023.04.02-21.31.03:652][757]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP/SportsCar/SportsCar_WheelsRear" FILE="../../../../../CS380_AlternativeInquisitions/CS380_FinalCPP/Content/BP/SportsCar/SportsCar_WheelsRear.uasset" SILENT=true
+[2023.04.02-21.31.03:653][757]LogSavePackage: Moving output files for package: /Game/BP/SportsCar/SportsCar_WheelsRear
+[2023.04.02-21.31.03:653][757]LogSavePackage: Moving '../../../../../CS380_AlternativeInquisitions/CS380_FinalCPP/Saved/SportsCar_WheelsRear3AEC9AC54E2ED4141E7DAD9CAE8766FA.tmp' to '../../../../../CS380_AlternativeInquisitions/CS380_FinalCPP/Content/BP/SportsCar/SportsCar_WheelsRear.uasset'
+[2023.04.02-21.31.03:653][757]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP/SportsCar/SportsCar_WheelsFront" FILE="../../../../../CS380_AlternativeInquisitions/CS380_FinalCPP/Content/BP/SportsCar/SportsCar_WheelsFront.uasset" SILENT=true
+[2023.04.02-21.31.03:654][757]LogSavePackage: Moving output files for package: /Game/BP/SportsCar/SportsCar_WheelsFront
+[2023.04.02-21.31.03:654][757]LogSavePackage: Moving '../../../../../CS380_AlternativeInquisitions/CS380_FinalCPP/Saved/SportsCar_WheelsFront88761446428D0774FF3E9DB0889274F2.tmp' to '../../../../../CS380_AlternativeInquisitions/CS380_FinalCPP/Content/BP/SportsCar/SportsCar_WheelsFront.uasset'
+[2023.04.02-21.31.03:654][757]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP/SportsCar/SportsCar_TorqueCurve" FILE="../../../../../CS380_AlternativeInquisitions/CS380_FinalCPP/Content/BP/SportsCar/SportsCar_TorqueCurve.uasset" SILENT=true
+[2023.04.02-21.31.03:655][757]LogSavePackage: Moving output files for package: /Game/BP/SportsCar/SportsCar_TorqueCurve
+[2023.04.02-21.31.03:655][757]LogSavePackage: Moving '../../../../../CS380_AlternativeInquisitions/CS380_FinalCPP/Saved/SportsCar_TorqueCurveB7760E8046A89E0CB9FADEBB4B5A179F.tmp' to '../../../../../CS380_AlternativeInquisitions/CS380_FinalCPP/Content/BP/SportsCar/SportsCar_TorqueCurve.uasset'
+[2023.04.02-21.31.03:714][757]LogUObjectHash: Compacting FUObjectHashTables data took   1.09ms
+[2023.04.02-21.31.03:738][757]LogUObjectHash: Compacting FUObjectHashTables data took   1.40ms
+[2023.04.02-21.31.03:761][757]LogUObjectHash: Compacting FUObjectHashTables data took   0.48ms
+[2023.04.02-21.31.03:788][757]AssetCheck: New page: Asset Save: multiple assets
+[2023.04.02-21.31.03:788][757]LogContentValidation: Display: Validating Blueprint /Game/BP/SportsCar/SportsCar_Pawn.SportsCar_Pawn
+[2023.04.02-21.31.03:788][757]LogContentValidation: Display: Validating Blueprint /Game/BP/BP_SceneManager.BP_SceneManager
+[2023.04.02-21.31.03:788][757]LogContentValidation: Display: Validating Blueprint /Game/BP/SportsCar/SportsCar_WheelsRear.SportsCar_WheelsRear
+[2023.04.02-21.31.03:788][757]LogContentValidation: Display: Validating Blueprint /Game/BP/SportsCar/SportsCar_WheelsFront.SportsCar_WheelsFront
+[2023.04.02-21.31.03:788][757]LogContentValidation: Display: Validating CurveFloat /Game/BP/SportsCar/SportsCar_TorqueCurve.SportsCar_TorqueCurve
+[2023.04.02-21.31.03:788][757]LogContentValidation: Display: Validating ObjectRedirector /Game/Vehicles/BP/SportsCar/SportsCar_Pawn.SportsCar_Pawn_C
+[2023.04.02-21.31.03:788][757]LogContentValidation: Display: Validating ObjectRedirector /Game/Vehicles/BP/SportsCar/SportsCar_Pawn.Default__SportsCar_Pawn_C
+[2023.04.02-21.31.03:788][757]LogContentValidation: Display: Validating ObjectRedirector /Game/Vehicles/BP/SportsCar/SportsCar_Pawn.SportsCar_Pawn
+[2023.04.02-21.31.03:788][757]LogContentValidation: Display: Validating ObjectRedirector /Game/Vehicles/BP/BP_SceneManager.BP_SceneManager_C
+[2023.04.02-21.31.03:788][757]LogContentValidation: Display: Validating ObjectRedirector /Game/Vehicles/BP/BP_SceneManager.Default__BP_SceneManager_C
+[2023.04.02-21.31.03:788][757]LogContentValidation: Display: Validating ObjectRedirector /Game/Vehicles/BP/BP_SceneManager.BP_SceneManager
+[2023.04.02-21.31.12:170][711]LogUObjectHash: Compacting FUObjectHashTables data took   1.13ms
+[2023.04.02-21.31.12:207][711]LogSavePackage: Moving output files for package: /Game/Levels/TrainingLevel0
+[2023.04.02-21.31.12:207][711]LogSavePackage: Moving '../../../../../CS380_AlternativeInquisitions/CS380_FinalCPP/Saved/TrainingLevel02028970D441EF8C16DB043B46851442B.tmp' to '../../../../../CS380_AlternativeInquisitions/CS380_FinalCPP/Content/Levels/TrainingLevel0.umap'
+[2023.04.02-21.31.12:216][711]LogFileHelpers: No new changes to save!
+[2023.04.02-21.31.12:227][711]AssetCheck: New page: Asset Save: TrainingLevel0
+[2023.04.02-21.31.12:227][711]LogContentValidation: Display: Validating World /Game/Levels/TrainingLevel0.TrainingLevel0
