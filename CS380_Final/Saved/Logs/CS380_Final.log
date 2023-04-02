@@ -815,3 +815,37 @@ LogConfig: CVar [[QualityLevelMapping:high]] deferred - dummy variable created
 [2023.04.01-21.42.00:687][612]LogD3D12RHI: Warning: Waited for PSO creation for 100.000000ms
 [2023.04.01-21.52.47:851][299]LogEditorClassViewer: Warning: Class /Engine/Tutorial/InWorldBlueprintEditing/TutorialAssets/IWBE_Blutility.IWBE_Blutility_C has parent /Script/Blutility.PlacedEditorUtilityBase, but this parent is not found. The Class will not be shown in ClassViewer.
 [2023.04.01-21.52.58:636][299]LogSlate: Window 'Pick Parent Class' being destroyed
+[2023.04.01-22.35.10:791][244]LogDerivedDataCache: C:/Users/Osprey/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:02.535 and deleted 0 file(s) with total size 0 MiB.
+[2023.04.01-23.35.10:421][ 36]LogDerivedDataCache: C:/Users/Osprey/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:02.161 and deleted 0 file(s) with total size 0 MiB.
+[2023.04.02-00.35.10:828][828]LogDerivedDataCache: C:/Users/Osprey/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:02.509 and deleted 1 file(s) with total size 0 MiB.
+[2023.04.02-01.35.10:288][618]LogDerivedDataCache: C:/Users/Osprey/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:02.228 and deleted 0 file(s) with total size 0 MiB.
+[2023.04.02-02.35.10:700][411]LogDerivedDataCache: C:/Users/Osprey/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:02.532 and deleted 0 file(s) with total size 0 MiB.
+[2023.04.02-03.35.10:417][202]LogDerivedDataCache: C:/Users/Osprey/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:02.241 and deleted 0 file(s) with total size 0 MiB.
+[2023.04.02-04.35.10:794][996]LogDerivedDataCache: C:/Users/Osprey/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:02.558 and deleted 0 file(s) with total size 0 MiB.
+[2023.04.02-05.35.10:559][788]LogDerivedDataCache: C:/Users/Osprey/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:02.211 and deleted 0 file(s) with total size 0 MiB.
+[2023.04.02-06.35.10:774][581]LogDerivedDataCache: C:/Users/Osprey/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:02.524 and deleted 0 file(s) with total size 0 MiB.
+[2023.04.02-07.35.11:605][370]LogDerivedDataCache: C:/Users/Osprey/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:02.229 and deleted 0 file(s) with total size 0 MiB.
+[2023.04.02-08.35.11:945][163]LogDerivedDataCache: C:/Users/Osprey/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:02.534 and deleted 0 file(s) with total size 0 MiB.
+[2023.04.02-09.11.56:445][771]LogAudioMixer: Warning: FMixerPlatformXAudio2: Changing default audio render device to new device: Role=Console, DeviceName=Headset_ (High Definition Audio Device), InstanceID=1
+[2023.04.02-09.11.56:445][771]LogAudioMixer: Display: FMixerNullCallback: Simulating a h/w device callback at [21ms], ThreadID=17648
+[2023.04.02-09.11.56:775][771]LogAudioMixer: Display: Successful Swap new Device is (NumChannels=2, SampleRate=48000, DeviceID={0.0.0.00000000}.{9b077ad1-b8ab-4f83-92e1-30910e42ae97}, Name=Headset_ (High Definition Audio Device)), Reason=FMixerPlatformXAudio2::OnDefaultRenderDeviceChanged, InstanceID=1, DurationMS=77.16
+[2023.04.02-09.11.56:775][771]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=1
+[2023.04.02-09.11.56:778][772]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=1
+[2023.04.02-20.22.29:424][796]LogAudioMixer: Warning: AudioMixerPlatformInterface Timeout [40222276ms] waiting for h/w. InstanceID=1
+[2023.04.02-20.22.29:424][796]LogAudioMixer: Display: FMixerNullCallback: Simulating a h/w device callback at [21ms], ThreadID=17648
+[2023.04.02-20.22.29:892][798]LogAudioMixer: Warning: FMixerPlatformXAudio2: Changing default audio render device to new device: Role=Console, DeviceName=ED273UR (NVIDIA High Definition Audio), InstanceID=1
+[2023.04.02-20.22.29:892][798]LogHttp: Warning: 000007EDEA538700: invalid HTTP response code received. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B1B7EACEA-4DA5-CE68-3B31-A5B0A20380E9%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.0.3-20979098%2B%2B%2BUE5%2BRelease-5.0&UserID=2091b6cc48a64dfa77f4908e6f909136%7C6759b2fe9b984ca7a3f7dacd0ca45e36%7C1bc76ecb-5670-4361-915b-2fae05011f14&AppEnvironment=datacollector-binary&UploadType=eteventstream, HTTP code: 0, content length: 0, actual payload size: 0
+[2023.04.02-20.22.29:892][798]LogHttp: Warning: 000007EDEA538700: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2023.04.02-20.22.29:892][798]LogHttp: Warning: 000007EDEA538700: libcurl info message cache 0 (Connection 0 seems to be dead!)
+[2023.04.02-20.22.29:892][798]LogHttp: Warning: 000007EDEA538700: libcurl info message cache 1 (Closing connection 0)
+[2023.04.02-20.22.29:892][798]LogHttp: Warning: 000007EDEA538700: libcurl info message cache 2 (Could not resolve host: datarouter.ol.epicgames.com)
+[2023.04.02-20.22.29:892][798]LogHttp: Warning: 000007EDEA538700: libcurl info message cache 3 (Closing connection 1)
+[2023.04.02-20.22.29:892][798]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B1B7EACEA-4DA5-CE68-3B31-A5B0A20380E9%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.0.3-20979098%2B%2B%2BUE5%2BRelease-5.0&UserID=2091b6cc48a64dfa77f4908e6f909136%7C6759b2fe9b984ca7a3f7dacd0ca45e36%7C1bc76ecb-5670-4361-915b-2fae05011f14&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2023.04.02-20.22.30:224][798]LogAudioMixer: Display: Successful Swap new Device is (NumChannels=2, SampleRate=48000, DeviceID={0.0.0.00000000}.{9b077ad1-b8ab-4f83-92e1-30910e42ae97}, Name=Headset_ (High Definition Audio Device)), Reason=AudioMixerPlatformInterface. Timeout waiting for h/w., InstanceID=1, DurationMS=493.14
+[2023.04.02-20.22.30:224][798]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=1
+[2023.04.02-20.22.30:229][799]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=1
+[2023.04.02-20.22.30:558][800]LogAudioMixer: Display: FMixerNullCallback: Simulating a h/w device callback at [21ms], ThreadID=17648
+[2023.04.02-20.22.30:894][800]LogAudioMixer: Display: Successful Swap new Device is (NumChannels=2, SampleRate=48000, DeviceID={0.0.0.00000000}.{9f64728a-b9e6-4205-9841-2a75f9f4d361}, Name=ED273UR (NVIDIA High Definition Audio)), Reason=FMixerPlatformXAudio2::OnDefaultRenderDeviceChanged, InstanceID=1, DurationMS=23.94
+[2023.04.02-20.22.30:894][800]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=1
+[2023.04.02-20.22.30:897][801]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=1
+[2023.04.02-20.45.29:510][926]LogDerivedDataCache: C:/Users/Osprey/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:02.660 and deleted 84 file(s) with total size 5 MiB.
