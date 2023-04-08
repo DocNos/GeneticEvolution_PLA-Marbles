@@ -93,6 +93,6 @@ Executable/*
 *.cache
 *.validationcache
 *.wsettings
-*.log
+./*.log
 
 
