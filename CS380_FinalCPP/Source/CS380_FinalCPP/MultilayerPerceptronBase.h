@@ -6,6 +6,14 @@
 #include "Components/ActorComponent.h"
 #include "MultilayerPerceptronBase.generated.h"
 
+struct Node {
+	TArray<float> weights;
+	ESensoryType sensory_type;
+	EActionType action;
+	float activation;
+};
+
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_ThreeParams(FActionDelegate, int, MarbleIndex, EActionType, Action, float, NormalizedStrength);
 
 UCLASS( Blueprintable, ClassGroup=(Custom), meta=(Blueprintable, BlueprintSpawnableComponent) )
 class CS380_FINALCPP_API UMultilayerPerceptronBase : public UActorComponent
@@ -15,10 +23,6 @@ class CS380_FINALCPP_API UMultilayerPerceptronBase : public UActorComponent
 public:	
 	// Sets default values for this component's properties
 	UMultilayerPerceptronBase();
-
-protected:
-	// Called when the game starts
-	virtual void BeginPlay() override;
 
 	UFUNCTION(BlueprintCallable, Category = "Perceptron")
 	void SetStructure(int layer_depth, int layer_count);
@@ -38,9 +42,26 @@ protected:
 	UFUNCTION(BlueprintCallable, Category = "Math")
 	static float ActivationThreshold(float normalized);
 
+	// Called to dispatch ActionUpdate events
+	UPROPERTY(BlueprintAssignable, Category = "Perceptron")
+	FActionDelegate OnActionUpdate;
+
+	//Marble/self ID
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Perceptron")
+	int id;
+
+	TArray<Node> inputs;
+	TArray<Node> outputs;
+	TArray<TArray<Node>> layers;
+
+protected:
+	// Called when the game starts
+	virtual void BeginPlay() override;
+
 public:	
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+
 
 		
 };
