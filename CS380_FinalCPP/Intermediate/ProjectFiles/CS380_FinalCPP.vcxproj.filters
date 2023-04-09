@@ -23,6 +23,15 @@
     <None Include="..\..\Config\DefaultGame.ini">
       <Filter>Config</Filter>
     </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Config\HoloLens">
+      <UniqueIdentifier>{4C8DD267-CDE7-336F-8602-F5F485D22BAB}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\HoloLens\HoloLensEngine.ini">
+      <Filter>Config\HoloLens</Filter>
+    </None>
     <Filter Include="Source\CS380_FinalCPP">
       <UniqueIdentifier>{EBC9E3D7-7E33-3EAC-A27E-92D62A12A3B9}</UniqueIdentifier>
     </Filter>
@@ -39,6 +48,18 @@
       <Filter>Source\CS380_FinalCPP</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\CS380_FinalCPP\CS380_FinalCPPGameModeBase.h">
+      <Filter>Source\CS380_FinalCPP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\CS380_FinalCPP\EActionType.h">
+      <Filter>Source\CS380_FinalCPP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\CS380_FinalCPP\ESensoryType.h">
+      <Filter>Source\CS380_FinalCPP</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CS380_FinalCPP\MultilayerPerceptronBase.cpp">
+      <Filter>Source\CS380_FinalCPP</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CS380_FinalCPP\MultilayerPerceptronBase.h">
       <Filter>Source\CS380_FinalCPP</Filter>
     </ClInclude>
   </ItemGroup>
