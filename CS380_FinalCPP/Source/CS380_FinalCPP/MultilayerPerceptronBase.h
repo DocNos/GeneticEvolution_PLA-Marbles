@@ -28,7 +28,7 @@ public:
 	void SetStructure(int layer_depth, int layer_count);
 
 	UFUNCTION(BlueprintCallable, Category = "Perceptron")
-	void Seed(TArray<float>& genome);
+	void Seed(TArray<float> genome);
 
 	UFUNCTION(BlueprintCallable, Category = "Perceptron")
 	void Perceive(ESensoryType sensory_type, float normalized);

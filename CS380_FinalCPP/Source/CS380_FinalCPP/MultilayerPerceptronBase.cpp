@@ -40,7 +40,7 @@ void UMultilayerPerceptronBase::SetStructure(int layer_depth, int layer_count) {
 	}
 }
 
-void UMultilayerPerceptronBase::Seed(TArray<float>& genome) {
+void UMultilayerPerceptronBase::Seed(TArray<float> genome) {
 	//clear i/o
 	inputs.Empty();
 	outputs.Empty();
@@ -86,6 +86,10 @@ void UMultilayerPerceptronBase::Seed(TArray<float>& genome) {
 
 void UMultilayerPerceptronBase::Perceive(ESensoryType sensory_type, float normalized) {
 	//Update inputs from the SensoryType
+	for(auto& node : inputs){
+		if(node.sensory_type == sensory_type) node.activation = normalized;
+	}
+
 }
 
 void UMultilayerPerceptronBase::ActOnPerceptions() {
