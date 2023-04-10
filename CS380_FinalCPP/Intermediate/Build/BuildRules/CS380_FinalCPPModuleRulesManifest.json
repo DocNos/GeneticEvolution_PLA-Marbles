@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"Z:\\CS380_AlternativeInquisitions\\CS380_FinalCPP\\Source\\CS380_FinalCPP\\CS380_FinalCPP.Build.cs",
-		"Z:\\CS380_AlternativeInquisitions\\CS380_FinalCPP\\Source\\CS380_FinalCPP.Target.cs",
-		"Z:\\CS380_AlternativeInquisitions\\CS380_FinalCPP\\Source\\CS380_FinalCPPEditor.Target.cs"
+		"C:\\Users\\mac\\OneDrive\\Documents\\CS380\\CS380_AlternativeInquisitions\\CS380_FinalCPP\\Source\\CS380_FinalCPP\\CS380_FinalCPP.Build.cs",
+		"C:\\Users\\mac\\OneDrive\\Documents\\CS380\\CS380_AlternativeInquisitions\\CS380_FinalCPP\\Source\\CS380_FinalCPP.Target.cs",
+		"C:\\Users\\mac\\OneDrive\\Documents\\CS380\\CS380_AlternativeInquisitions\\CS380_FinalCPP\\Source\\CS380_FinalCPPEditor.Target.cs"
 	],
 	"EngineVersion": "5.0.3"
 }
