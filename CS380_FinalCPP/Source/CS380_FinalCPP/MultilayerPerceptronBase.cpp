@@ -86,6 +86,9 @@ void UMultilayerPerceptronBase::Seed(TArray<float>& genome) {
 
 void UMultilayerPerceptronBase::Perceive(ESensoryType sensory_type, float normalized) {
 	//Update inputs from the SensoryType
+	for(auto& node : inputs){
+		if(node.sensory_type == sensory_type) node.activation = normalized;
+	}
 }
 
 void UMultilayerPerceptronBase::ActOnPerceptions() {
