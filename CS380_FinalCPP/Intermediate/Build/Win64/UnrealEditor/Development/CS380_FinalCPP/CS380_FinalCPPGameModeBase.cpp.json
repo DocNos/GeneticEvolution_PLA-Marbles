@@ -1,17 +1,17 @@
 {
     "Version": "1.1",
     "Data": {
-        "Source": "z:\\cs380_alternativeinquisitions\\cs380_finalcpp\\source\\cs380_finalcpp\\cs380_finalcppgamemodebase.cpp",
+        "Source": "c:\\users\\mac\\onedrive\\documents\\cs380\\cs380_alternativeinquisitions\\cs380_finalcpp\\source\\cs380_finalcpp\\cs380_finalcppgamemodebase.cpp",
         "ProvidedModule": "",
-        "PCH": "z:\\cs380_alternativeinquisitions\\cs380_finalcpp\\intermediate\\build\\win64\\cs380_finalcppeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "PCH": "c:\\users\\mac\\onedrive\\documents\\cs380\\cs380_alternativeinquisitions\\cs380_finalcpp\\intermediate\\build\\win64\\cs380_finalcppeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
         "Includes": [
-            "z:\\cs380_alternativeinquisitions\\cs380_finalcpp\\intermediate\\build\\win64\\unrealeditor\\development\\cs380_finalcpp\\definitions.cs380_finalcpp.h",
-            "z:\\cs380_alternativeinquisitions\\cs380_finalcpp\\source\\cs380_finalcpp\\cs380_finalcppgamemodebase.h",
-            "z:\\unreal engine\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
-            "z:\\unreal engine\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
-            "z:\\unreal engine\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\serverstatreplicator.generated.h",
-            "z:\\unreal engine\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\gamemodebase.generated.h",
-            "z:\\cs380_alternativeinquisitions\\cs380_finalcpp\\intermediate\\build\\win64\\unrealeditor\\inc\\cs380_finalcpp\\cs380_finalcppgamemodebase.generated.h"
+            "c:\\users\\mac\\onedrive\\documents\\cs380\\cs380_alternativeinquisitions\\cs380_finalcpp\\intermediate\\build\\win64\\unrealeditor\\development\\cs380_finalcpp\\definitions.cs380_finalcpp.h",
+            "c:\\users\\mac\\onedrive\\documents\\cs380\\cs380_alternativeinquisitions\\cs380_finalcpp\\source\\cs380_finalcpp\\cs380_finalcppgamemodebase.h",
+            "f:\\unrealengine\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "f:\\unrealengine\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "f:\\unrealengine\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\serverstatreplicator.generated.h",
+            "f:\\unrealengine\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\gamemodebase.generated.h",
+            "c:\\users\\mac\\onedrive\\documents\\cs380\\cs380_alternativeinquisitions\\cs380_finalcpp\\intermediate\\build\\win64\\unrealeditor\\inc\\cs380_finalcpp\\cs380_finalcppgamemodebase.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []
