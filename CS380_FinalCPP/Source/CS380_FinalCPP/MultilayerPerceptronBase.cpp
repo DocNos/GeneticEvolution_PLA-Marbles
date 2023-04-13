@@ -3,6 +3,7 @@
 
 #include "MultilayerPerceptronBase.h"
 
+#include "DrawDebugHelpers.h"
 #include "EActionType.h"
 #include "ESensoryType.h"
 
@@ -26,17 +27,86 @@ void UMultilayerPerceptronBase::BeginPlay()
 	
 }
 
-void UMultilayerPerceptronBase::SetStructure(int layer_depth, int layer_count) {
+void UMultilayerPerceptronBase::DrawLayers(FVector world_origin) {
+	int offset = 0;
+	TArray<FColor> colors;
+	for(int r = 0; r <= 100; r += 15){
+		for(int g = 0; g <= 100; g += 15){
+			for(int b = 0; b <= 100; b += 15){
+				if((r + g + b) > 50 && (std::abs(r - b) + std::abs(r-g) + std::abs(b-g)) > 20) {
+					colors.Add(FColor(r, g, b, 100));
+				}
+			}
+		}
+	}
+	
+	int prior_target = 0;
+	for(int i = 0; i < colors.Num(); ++i){
+		prior_target = (75 * prior_target + 74) % 65537;
+		int shuffle_target = prior_target % colors.Num();
+		colors.Swap(i, shuffle_target);
+	}
+	int gap = 5;
+
+	int node_offset = 0;
+	//draw float weight on the right side of the ball
+	auto draw_weight = [this,world_origin, gap, &offset, &node_offset, &colors](float progress) {
+		FColor active_color = colors[node_offset % colors.Num()];
+		FVector vertical = FVector(0, 0, offset + 100 + gap/2.0);
+		DrawDebugLine(GetWorld(), world_origin+vertical, FVector(-100, 0, 0) + vertical + world_origin, FColor::Black, false, 0.0f, 0, gap);
+		DrawDebugLine(GetWorld(), world_origin+vertical, FVector(-progress*100, 0, 0) + vertical + world_origin, active_color, false, 0.0f, 0, gap);
+	};
+	//draw node activation on the left side of the ball
+	auto draw_activation = [this,world_origin, gap, &offset, &colors](float progress, float size) {
+		FColor active_color = colors[offset % colors.Num()];
+		FVector vertical = FVector(0, 0, offset + 100 + size/2.0);
+		DrawDebugLine(GetWorld(), world_origin+vertical, FVector(100, 0, 0) + vertical + world_origin, FColor(progress, progress*10, progress*100, 100), false, 0.0f, 0, size);
+	};
+
+	//draw a gap between nodes
+	auto draw_space = [this, world_origin, gap, &offset]() {
+		FVector vertical = FVector(100, 0, offset + 100 + gap);
+		DrawDebugLine(GetWorld(), world_origin + vertical, FVector(-200, 0, 0) + vertical + world_origin, FColor(20,20,20,90), false, 0.0f, 0, gap*2);
+		offset += gap*2;
+	};
+
+
+	auto draw_node = [gap, &offset, &node_offset, &draw_weight, & draw_activation, & draw_space](FMPNode& node){
+		for(auto& weight : node.weights){
+			draw_weight(weight);
+			offset += gap;
+		}
+		offset -= gap * node.weights.Num();
+		draw_activation(node.activation, gap*node.weights.Num());
+		offset += gap * node.weights.Num();
+		draw_space();
+		++node_offset;
+	};
+
+
+	for (auto& node : outputs) {
+		draw_node(node);
+	}	
+	for (auto& node : layers) {
+		draw_node(node);
+	}
+	for (auto& node : inputs) {
+		draw_node(node);
+	}
+}
+
+void UMultilayerPerceptronBase::SetStructure(int num_layer_nodes, int num_layers) {
+	layer_count = num_layers;
+	layer_height = num_layer_nodes;
+
 	layers.Empty();
 	for (int layer_index = 0; layer_index < layer_count; ++layer_index) {
-		auto layer = TArray<Node>();
-		for (int node_index = 0; node_index < layer_depth; ++node_index) {
-			Node node;
+		for (int node_index = 0; node_index < layer_height; ++node_index) {
+			FMPNode node;
 			node.weights = TArray<float>();
 			node.activation = 0.0f;
-			layer.Add(node);
+			layers.Add(node);
 		}
-		layers.Add(layer);
 	}
 }
 
@@ -46,23 +116,25 @@ void UMultilayerPerceptronBase::Seed(TArray<float> genome) {
 	outputs.Empty();
 
 	//set up input layer
+	int node_count = 0;
 	for (auto sensory_type : TEnumRange<ESensoryType>()) {
-		Node node;
+		FMPNode node;
 		node.weights = TArray<float>();
 		node.sensory_type = sensory_type;
 		node.action = EActionType::Count;
 		node.activation = 0.0f;
 		inputs.Add(node);
+		//UE_LOG(LogTemp, Log, TEXT("Sensory Range for Node %d: %d"), ++node_count, (uint8_t)sensory_type);
+		//UE_LOG(LogTemp, Log, TEXT("Actual Sensory Range for Node %d: %d"), node_count, node.sensory_type);
 	}
 
+	int genome_offset = 0;
 	//set up output layer
-	auto& final_layer = inputs;
-	if (layers.Num()) final_layer = layers.Top();
 	for (auto action_type : TEnumRange<EActionType>()) {
-		Node node;
+		FMPNode node;
 		node.weights = TArray<float>();
-		for (int i = genome.Num() - final_layer.Num(); i >= 0 && i < genome.Num(); ++i) {
-			node.weights.Add(genome[i]);
+		for (int i = 0; i < layer_height && genome_offset < genome.Num(); ++i) {
+			node.weights.Add(genome[genome_offset++]);
 		}
 		node.sensory_type = ESensoryType::Count;
 		node.action = action_type;
@@ -70,54 +142,76 @@ void UMultilayerPerceptronBase::Seed(TArray<float> genome) {
 		outputs.Add(node);
 	}
 
-	//fill intermediary layers
-	int genome_offset = 0;
-	auto& prior_layer = inputs;
-	for (auto& layer : layers) {
-		for (auto& node : layer) {
-			node.weights.Empty();
-			for (int i = 0; i < prior_layer.Num() && genome_offset < genome.Num(); ++i) {
-				node.weights.Add(genome[genome_offset++]);
-			}
-			node.activation = 0.0f;
+	//set up input-adjacent layer
+	for(int i = 0; i < layer_height && i < layers.Num(); ++i){ //for first layer
+		auto& node = layers[i];
+		node.weights.Empty();
+		for(int j = 0; j < inputs.Num() && genome_offset < genome.Num(); ++j){ //for each input
+			node.weights.Add(genome[genome_offset++]); //add weight
 		}
+	}
+
+	//fill intermediary layers
+	for(int i = layer_height; i < layers.Num(); ++i){
+		auto& node = layers[i];
+		node.weights.Empty();
+		for (int j = 0; j < layer_height && genome_offset < genome.Num(); ++j) {
+			node.weights.Add(genome[genome_offset++]);
+		}
+		node.activation = 0.0f;
 	}
 }
 
 void UMultilayerPerceptronBase::Perceive(ESensoryType sensory_type, float normalized) {
 	//Update inputs from the SensoryType
+	int node_count = 0;
 	for(auto& node : inputs){
-		if(node.sensory_type == sensory_type) node.activation = normalized;
-	}
+		//UE_LOG(LogTemp, Log, TEXT("Node %d has sensory type %d, looking for %d"), ++node_count, (uint8_t) node.sensory_type, (uint8_t) sensory_type);
 
+		if (node.sensory_type == sensory_type) {
+			node.activation = normalized;
+			return;
+		}
+	}
+	//UE_LOG(LogTemp, Log, TEXT("Could not find sensory type in input nodes, size %d"), inputs.Num());
 }
 
 void UMultilayerPerceptronBase::ActOnPerceptions() {
 
-	auto apply_weights = [](TArray<Node>& prior, Node& node) {
-		int weight_end = std::min(prior.Num(), node.weights.Num()); //gracefully handle mismatches in size
-		float sum = 0.0f;
-		for (int weight_index = 0; weight_index < weight_end; ++weight_index) {
-			auto prior_node = prior[weight_index];
+	auto apply_weights = [](TArray<FMPNode>& nodes, int offset, FMPNode& node) {
+		float sum = 0.0f; //FMath::RandRange(0, 1000);
+		for (int weight_index = 0; weight_index < node.weights.Num(); ++weight_index) {
+			if(nodes.Num() <= offset + weight_index) continue; //don't crash out on mismatches
+			auto& prior_node = nodes[offset + weight_index];
 			auto weight = node.weights[weight_index];
 			//normalize into -1 to 1
-			weight = (weight * 2.0f) - 1.0f;
+			weight = (weight * 2.0f) - 1.0f; // 0:1 genome adjusted to be -1 : 1
 			//accumulate
 			sum += prior_node.activation * weight;
 		}
-		node.activation = sum / weight_end;
+		node.activation = sum / node.weights.Num();
 	};
 	//Run forward propagation
 	if (layers.Num()) {
-		TArray<Node>& prior = inputs;
-		for (auto& layer : layers) {
-			for (auto& node : layer) {
-				apply_weights(prior, node);
-			}
-			prior = layer;
+		//reach input layer
+		for(int i = 0; i < layer_height && i < layers.Num(); ++i){
+			apply_weights(inputs, 0, layers[i]);
 		}
+
+		//run on inner layers
+		for(int layer = 1; layer < layer_count; ++layer){
+			for(int node = 0; node < layer_height; ++node){
+				apply_weights(layers, (layer-1)*layer_height, layers[(layer*layer_height)+node]);
+			}
+		}
+
+		//reach output layer
 		for (auto& node : outputs) {
-			apply_weights(prior, node);
+			apply_weights(layers, (layer_count-1)*layer_height, node);
+		}
+	}else{
+		for(int i = 0; i < outputs.Num(); ++i){
+			apply_weights(inputs, 0, outputs[i]);
 		}
 	}
 	//Distribute outputs as events to controllers

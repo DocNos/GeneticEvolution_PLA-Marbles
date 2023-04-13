@@ -3,15 +3,9 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "FMPNode.h"
 #include "Components/ActorComponent.h"
 #include "MultilayerPerceptronBase.generated.h"
-
-struct Node {
-	TArray<float> weights;
-	ESensoryType sensory_type;
-	EActionType action;
-	float activation;
-};
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_ThreeParams(FActionDelegate, int, MarbleIndex, EActionType, Action, float, NormalizedStrength);
 
@@ -23,6 +17,9 @@ class CS380_FINALCPP_API UMultilayerPerceptronBase : public UActorComponent
 public:	
 	// Sets default values for this component's properties
 	UMultilayerPerceptronBase();
+
+	UFUNCTION(BlueprintCallable, Category = "Perceptron")
+	void DrawLayers(FVector world_origin);
 
 	UFUNCTION(BlueprintCallable, Category = "Perceptron")
 	void SetStructure(int layer_depth, int layer_count);
@@ -50,13 +47,24 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Perceptron")
 	int id;
 
-	TArray<Node> inputs;
-	TArray<Node> outputs;
-	TArray<TArray<Node>> layers;
+	UPROPERTY()
+	TArray<FMPNode> inputs;
+
+	UPROPERTY()
+	TArray<FMPNode> outputs;
+
+	UPROPERTY()
+	TArray<FMPNode> layers;
 
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
+
+	UPROPERTY()
+	int layer_count;
+
+	UPROPERTY()
+	int layer_height;
 
 public:	
 	// Called every frame
