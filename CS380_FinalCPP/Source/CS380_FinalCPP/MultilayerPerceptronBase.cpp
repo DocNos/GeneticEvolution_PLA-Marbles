@@ -46,6 +46,7 @@ void UMultilayerPerceptronBase::Seed(TArray<float> genome) {
 	outputs.Empty();
 
 	//set up input layer
+	int node_count = 0;
 	for (auto sensory_type : TEnumRange<ESensoryType>()) {
 		Node node;
 		node.weights = TArray<float>();
@@ -53,6 +54,8 @@ void UMultilayerPerceptronBase::Seed(TArray<float> genome) {
 		node.action = EActionType::Count;
 		node.activation = 0.0f;
 		inputs.Add(node);
+		UE_LOG(LogTemp, Log, TEXT("Sensory Range for Node %d: %d"), ++node_count, (uint8_t)sensory_type);
+		UE_LOG(LogTemp, Log, TEXT("Actual Sensory Range for Node %d: %d"), node_count, node.sensory_type);
 	}
 
 	//set up output layer
@@ -86,17 +89,23 @@ void UMultilayerPerceptronBase::Seed(TArray<float> genome) {
 
 void UMultilayerPerceptronBase::Perceive(ESensoryType sensory_type, float normalized) {
 	//Update inputs from the SensoryType
+	int node_count = 0;
 	for(auto& node : inputs){
-		if(node.sensory_type == sensory_type) node.activation = normalized;
-	}
+		UE_LOG(LogTemp, Log, TEXT("Node %d has sensory type %d, looking for %d"), ++node_count, (uint8_t) node.sensory_type, (uint8_t) sensory_type);
 
+		if (node.sensory_type == sensory_type) {
+			node.activation = normalized;
+			return;
+		}
+	}
+	UE_LOG(LogTemp, Log, TEXT("Could not find sensory type in input nodes, size %d"), inputs.Num());
 }
 
 void UMultilayerPerceptronBase::ActOnPerceptions() {
 
 	auto apply_weights = [](TArray<Node>& prior, Node& node) {
 		int weight_end = std::min(prior.Num(), node.weights.Num()); //gracefully handle mismatches in size
-		float sum = 0.0f;
+		float sum = FMath::RandRange(0, 1000);
 		for (int weight_index = 0; weight_index < weight_end; ++weight_index) {
 			auto prior_node = prior[weight_index];
 			auto weight = node.weights[weight_index];
