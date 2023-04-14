@@ -56,6 +56,9 @@
     <ClInclude Include="..\..\Source\CS380_FinalCPP\ESensoryType.h">
       <Filter>Source\CS380_FinalCPP</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\CS380_FinalCPP\FMPNode.h">
+      <Filter>Source\CS380_FinalCPP</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\CS380_FinalCPP\MultilayerPerceptronBase.cpp">
       <Filter>Source\CS380_FinalCPP</Filter>
     </ClCompile>
