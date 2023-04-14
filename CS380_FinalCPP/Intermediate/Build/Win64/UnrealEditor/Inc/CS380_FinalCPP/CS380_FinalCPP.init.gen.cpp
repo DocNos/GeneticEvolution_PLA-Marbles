@@ -21,13 +21,13 @@ void EmptyLinkFunctionForGeneratedCodeCS380_FinalCPP_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0x0702DD78,
-				0xFEB2E438,
+				0x23D2BA43,
+				0x7FF13A6E,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_CS380_FinalCPP.OuterSingleton, PackageParams);
 		}
 		return Z_Registration_Info_UPackage__Script_CS380_FinalCPP.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_CS380_FinalCPP(Z_Construct_UPackage__Script_CS380_FinalCPP, TEXT("/Script/CS380_FinalCPP"), Z_Registration_Info_UPackage__Script_CS380_FinalCPP, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x0702DD78, 0xFEB2E438));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_CS380_FinalCPP(Z_Construct_UPackage__Script_CS380_FinalCPP, TEXT("/Script/CS380_FinalCPP"), Z_Registration_Info_UPackage__Script_CS380_FinalCPP, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x23D2BA43, 0x7FF13A6E));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

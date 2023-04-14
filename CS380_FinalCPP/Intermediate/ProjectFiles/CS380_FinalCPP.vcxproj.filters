@@ -65,5 +65,11 @@
     <ClInclude Include="..\..\Source\CS380_FinalCPP\MultilayerPerceptronBase.h">
       <Filter>Source\CS380_FinalCPP</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\CS380_FinalCPP\Serializer.cpp">
+      <Filter>Source\CS380_FinalCPP</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CS380_FinalCPP\Serializer.h">
+      <Filter>Source\CS380_FinalCPP</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
