@@ -1,18 +1,16 @@
-C:\Users\mac\OneDrive\Documents\CS380\CS380_AlternativeInquisitions\CS380_FinalCPP\Intermediate\Build\Win64\UnrealEditor\Inc\CS380_FinalCPP\CS380_FinalCPPGameModeBase.gen.cpp
+Z:\CS380_AlternativeInquisitions\CS380_FinalCPP\Intermediate\Build\Win64\UnrealEditor\Inc\CS380_FinalCPP\CS380_FinalCPPGameModeBase.gen.cpp
 /I .
-/I C:\Users\mac\OneDrive\Documents\CS380\CS380_AlternativeInquisitions\CS380_FinalCPP\Intermediate\Build\Win64\UnrealEditor\Inc\CS380_FinalCPP
-/I C:\Users\mac\OneDrive\Documents\CS380\CS380_AlternativeInquisitions\CS380_FinalCPP\Source
-/I Runtime
-/I Runtime\TraceLog\Public
-/I Runtime\Core\Public
-/I ..\Intermediate\Build\Win64\UnrealEditor\Inc\CoreUObject
-/I Runtime\CoreUObject\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\Engine
+/I Runtime
 /I ..\Shaders\Shared
 /I Runtime\Engine\Classes
 /I Runtime\Engine\Public
+/I Runtime\TraceLog\Public
+/I Runtime\Core\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\CoreOnline
 /I Runtime\CoreOnline\Public
+/I ..\Intermediate\Build\Win64\UnrealEditor\Inc\CoreUObject
+/I Runtime\CoreUObject\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\NetCore
 /I Runtime\Net
 /I Runtime\Net\Core\Classes
@@ -253,6 +251,8 @@ C:\Users\mac\OneDrive\Documents\CS380\CS380_AlternativeInquisitions\CS380_FinalC
 /I Runtime\ClothingSystemRuntimeInterface\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\AnimationDataController
 /I Developer\AnimationDataController\Public
+/I Z:\CS380_AlternativeInquisitions\CS380_FinalCPP\Intermediate\Build\Win64\UnrealEditor\Inc\CS380_FinalCPP
+/I Z:\CS380_AlternativeInquisitions\CS380_FinalCPP\Source
 /I ThirdParty\mimalloc\include
 /I ThirdParty\LibTiff\Source\Win64
 /I ThirdParty\LibTiff\Source
@@ -269,16 +269,16 @@ C:\Users\mac\OneDrive\Documents\CS380\CS380_AlternativeInquisitions\CS380_FinalC
 /I ThirdParty\PhysX3\PhysX_3.4\Include\geometry
 /I "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE"
 /I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"
-/FI"C:\Users\mac\OneDrive\Documents\CS380\CS380_AlternativeInquisitions\CS380_FinalCPP\Intermediate\Build\Win64\CS380_FinalCPPEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/FI"C:\Users\mac\OneDrive\Documents\CS380\CS380_AlternativeInquisitions\CS380_FinalCPP\Intermediate\Build\Win64\UnrealEditor\Development\CS380_FinalCPP\Definitions.CS380_FinalCPP.h"
-/Yu"C:\Users\mac\OneDrive\Documents\CS380\CS380_AlternativeInquisitions\CS380_FinalCPP\Intermediate\Build\Win64\CS380_FinalCPPEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"C:\Users\mac\OneDrive\Documents\CS380\CS380_AlternativeInquisitions\CS380_FinalCPP\Intermediate\Build\Win64\CS380_FinalCPPEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-/Fo"C:\Users\mac\OneDrive\Documents\CS380\CS380_AlternativeInquisitions\CS380_FinalCPP\Intermediate\Build\Win64\UnrealEditor\Development\CS380_FinalCPP\CS380_FinalCPPGameModeBase.gen.cpp.obj"
-/sourceDependencies C:\Users\mac\OneDrive\Documents\CS380\CS380_AlternativeInquisitions\CS380_FinalCPP\Intermediate\Build\Win64\UnrealEditor\Development\CS380_FinalCPP\CS380_FinalCPPGameModeBase.gen.cpp.json
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"
+/FI"Z:\CS380_AlternativeInquisitions\CS380_FinalCPP\Intermediate\Build\Win64\CS380_FinalCPPEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/FI"Z:\CS380_AlternativeInquisitions\CS380_FinalCPP\Intermediate\Build\Win64\UnrealEditor\Development\CS380_FinalCPP\Definitions.CS380_FinalCPP.h"
+/Yu"Z:\CS380_AlternativeInquisitions\CS380_FinalCPP\Intermediate\Build\Win64\CS380_FinalCPPEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"Z:\CS380_AlternativeInquisitions\CS380_FinalCPP\Intermediate\Build\Win64\CS380_FinalCPPEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+/Fo"Z:\CS380_AlternativeInquisitions\CS380_FinalCPP\Intermediate\Build\Win64\UnrealEditor\Development\CS380_FinalCPP\CS380_FinalCPPGameModeBase.gen.cpp.obj"
+/sourceDependencies Z:\CS380_AlternativeInquisitions\CS380_FinalCPP\Intermediate\Build\Win64\UnrealEditor\Development\CS380_FinalCPP\CS380_FinalCPPGameModeBase.gen.cpp.json
 /Zc:inline
 /nologo
 /Oi
