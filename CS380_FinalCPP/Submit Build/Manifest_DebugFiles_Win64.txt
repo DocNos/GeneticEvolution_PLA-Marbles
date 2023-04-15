@@ -1,0 +1,8 @@
+CS380_FinalCPP/Binaries/Win64/CS380_FinalCPP-Win64-Shipping.pdb	2023-04-15T19:27:51.620Z
+Engine/Binaries/ThirdParty/PhysX3/Win64/VS2015/PhysX3_x64.pdb	2022-09-21T15:50:49.410Z
+Engine/Binaries/ThirdParty/PhysX3/Win64/VS2015/PhysX3Common_x64.pdb	2022-09-21T15:50:49.910Z
+Engine/Binaries/ThirdParty/PhysX3/Win64/VS2015/PhysX3Cooking_x64.pdb	2022-09-21T15:50:49.940Z
+Engine/Binaries/ThirdParty/PhysX3/Win64/VS2015/PxFoundation_x64.pdb	2022-09-21T15:50:50.514Z
+Engine/Binaries/ThirdParty/PhysX3/Win64/VS2015/PxPvdSDK_x64.pdb	2022-09-21T15:50:50.522Z
+Engine/Content/SlateDebug/Fonts/LastResort.tps	2022-09-21T15:54:04.684Z
+Engine/Content/SlateDebug/Fonts/LastResort.ttf	2022-09-21T15:54:05.599Z
