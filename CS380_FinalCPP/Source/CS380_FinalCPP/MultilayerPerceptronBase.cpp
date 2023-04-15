@@ -53,20 +53,20 @@ void UMultilayerPerceptronBase::DrawLayers(FVector world_origin) {
 	auto draw_weight = [this,world_origin, gap, &offset, &node_offset, &colors](float progress) {
 		FColor active_color = colors[node_offset % colors.Num()];
 		FVector vertical = FVector(0, 0, offset + 100 + gap/2.0);
-		DrawDebugLine(GetWorld(), world_origin+vertical, FVector(-100, 0, 0) + vertical + world_origin, FColor::Black, false, 0.0f, 0, gap);
-		DrawDebugLine(GetWorld(), world_origin+vertical, FVector(-progress*100, 0, 0) + vertical + world_origin, active_color, false, 0.0f, 0, gap);
+		DrawDebugLine(GetWorld(), world_origin+vertical, FVector(0, -100, 0) + vertical + world_origin, FColor::Black, false, 0.0f, 0, gap);
+		DrawDebugLine(GetWorld(), world_origin+vertical, FVector(0, -progress*100, 0) + vertical + world_origin, active_color, false, 0.0f, 0, gap);
 	};
 	//draw node activation on the left side of the ball
 	auto draw_activation = [this,world_origin, gap, &offset, &colors](float progress, float size) {
 		FColor active_color = colors[offset % colors.Num()];
 		FVector vertical = FVector(0, 0, offset + 100 + size/2.0);
-		DrawDebugLine(GetWorld(), world_origin+vertical, FVector(100, 0, 0) + vertical + world_origin, FColor(progress, progress*10, progress*100, 100), false, 0.0f, 0, size);
+		DrawDebugLine(GetWorld(), world_origin+vertical, FVector(0, 100, 0) + vertical + world_origin, FColor(progress, progress*10, progress*100, 100), false, 0.0f, 0, size);
 	};
 
 	//draw a gap between nodes
 	auto draw_space = [this, world_origin, gap, &offset]() {
-		FVector vertical = FVector(100, 0, offset + 100 + gap);
-		DrawDebugLine(GetWorld(), world_origin + vertical, FVector(-200, 0, 0) + vertical + world_origin, FColor(20,20,20,90), false, 0.0f, 0, gap*2);
+		FVector vertical = FVector(0, 100, offset + 100 + gap);
+		DrawDebugLine(GetWorld(), world_origin + vertical, FVector(0, -200, 0) + vertical + world_origin, FColor(20,20,20,90), false, 0.0f, 0, gap*2);
 		offset += gap*2;
 	};
 
