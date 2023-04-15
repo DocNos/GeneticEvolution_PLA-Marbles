@@ -115,6 +115,8 @@ void UMultilayerPerceptronBase::Seed(TArray<float> genome) {
 	inputs.Empty();
 	outputs.Empty();
 
+	int genome_offset = 0;
+
 	//set up input layer
 	int node_count = 0;
 	for (auto sensory_type : TEnumRange<ESensoryType>()) {
@@ -123,12 +125,13 @@ void UMultilayerPerceptronBase::Seed(TArray<float> genome) {
 		node.sensory_type = sensory_type;
 		node.action = EActionType::Count;
 		node.activation = 0.0f;
+		node.bias = genome[genome_offset++] * 2.0f - 1.0f;
 		inputs.Add(node);
 		//UE_LOG(LogTemp, Log, TEXT("Sensory Range for Node %d: %d"), ++node_count, (uint8_t)sensory_type);
 		//UE_LOG(LogTemp, Log, TEXT("Actual Sensory Range for Node %d: %d"), node_count, node.sensory_type);
 	}
 
-	int genome_offset = 0;
+	
 	//set up output layer
 	for (auto action_type : TEnumRange<EActionType>()) {
 		FMPNode node;
@@ -139,6 +142,7 @@ void UMultilayerPerceptronBase::Seed(TArray<float> genome) {
 		node.sensory_type = ESensoryType::Count;
 		node.action = action_type;
 		node.activation = 0.0f;
+		node.bias = genome[genome_offset++] * 2.0f - 1.0f;
 		outputs.Add(node);
 	}
 
@@ -149,6 +153,7 @@ void UMultilayerPerceptronBase::Seed(TArray<float> genome) {
 		for(int j = 0; j < inputs.Num() && genome_offset < genome.Num(); ++j){ //for each input
 			node.weights.Add(genome[genome_offset++]); //add weight
 		}
+		node.bias = genome[genome_offset++] * 2.0f - 1.0f;
 	}
 
 	//fill intermediary layers
@@ -159,6 +164,7 @@ void UMultilayerPerceptronBase::Seed(TArray<float> genome) {
 			node.weights.Add(genome[genome_offset++]);
 		}
 		node.activation = 0.0f;
+		node.bias = genome[genome_offset++] * 2.0f - 1.0f;
 	}
 }
 
@@ -179,7 +185,7 @@ void UMultilayerPerceptronBase::Perceive(ESensoryType sensory_type, float normal
 void UMultilayerPerceptronBase::ActOnPerceptions() {
 
 	auto apply_weights = [](TArray<FMPNode>& nodes, int offset, FMPNode& node) {
-		float sum = 0.0f; //FMath::RandRange(0, 1000);
+		float sum = node.bias; //FMath::RandRange(0, 1000);
 		for (int weight_index = 0; weight_index < node.weights.Num(); ++weight_index) {
 			if(nodes.Num() <= offset + weight_index) continue; //don't crash out on mismatches
 			auto& prior_node = nodes[offset + weight_index];
@@ -189,7 +195,7 @@ void UMultilayerPerceptronBase::ActOnPerceptions() {
 			//accumulate
 			sum += prior_node.activation * weight;
 		}
-		node.activation = sum / node.weights.Num();
+		node.activation = ActivationThreshold(sum / node.weights.Num());
 	};
 	//Run forward propagation
 	if (layers.Num()) {

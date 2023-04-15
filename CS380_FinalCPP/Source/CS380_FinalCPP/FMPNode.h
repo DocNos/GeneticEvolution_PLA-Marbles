@@ -18,6 +18,9 @@ struct CS380_FINALCPP_API FMPNode {
 	TArray<float> weights;
 
 	UPROPERTY()
+	float bias;
+
+	UPROPERTY()
 	ESensoryType sensory_type;
 
 	UPROPERTY()
